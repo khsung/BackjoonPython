@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Backjoon_Python", "Backjoon_Python.pyproj", "{05967938-CFFA-4BFF-96BF-58CF34671BC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05967938-CFFA-4BFF-96BF-58CF34671BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05967938-CFFA-4BFF-96BF-58CF34671BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4861B01C-49B2-4774-9790-56CFA6A52618}
+	EndGlobalSection
+EndGlobal
