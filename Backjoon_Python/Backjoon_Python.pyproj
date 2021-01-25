@@ -27,7 +27,7 @@
     <Compile Include="String\2941%28Croatia%29.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="test.py" />
+    <Compile Include="Useful_Function.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Function\" />
