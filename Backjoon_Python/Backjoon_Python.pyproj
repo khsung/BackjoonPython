@@ -24,6 +24,9 @@
     <Compile Include="Function\4673%28Self_Num%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Math\1193%28Find Math%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="String\1316%28Group word checker%29.py">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Function\" />
+    <Folder Include="Math\" />
     <Folder Include="String\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
