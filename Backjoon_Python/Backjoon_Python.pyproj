@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>String\1316(Group word checker).py</StartupFile>
+    <StartupFile>Math\1193(Find Fraction).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,7 +24,7 @@
     <Compile Include="Function\4673%28Self_Num%29.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Math\1193%28Find Math%29.py">
+    <Compile Include="Math\1193%28Find Fraction%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="String\1316%28Group word checker%29.py">
