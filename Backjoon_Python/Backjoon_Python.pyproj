@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Math\10250(ACM Hotel).py</StartupFile>
+    <StartupFile>Math\10757(Big number A+B).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\10250%28ACM Hotel%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Math\10757%28Big number A+B%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\1193%28Find Fraction%29.py">
