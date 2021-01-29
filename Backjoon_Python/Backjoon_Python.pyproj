@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Stack\1874(Stack Sequence).py</StartupFile>
+    <StartupFile>Stack\17298(Okensu).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -40,6 +40,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\4948%28Betrand Postulate%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stack\17298%28Okensu%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Stack\1874%28Stack Sequence%29.py">
