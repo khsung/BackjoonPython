@@ -16,3 +16,6 @@ a,b=input().split(" ")
 #리스트에서 최대, 최대인덱스, 최소, 최소인덱스값 찾기
 value=[1,2,3,4,5]
 max(value), value.index(max(value)), min(value), value.index(min(value))
+
+#리스트 반전
+list.reverse()
