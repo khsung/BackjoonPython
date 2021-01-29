@@ -12,3 +12,7 @@ ord(문자)
 
 #공백 기준으로 여러개 입력받기
 a,b=input().split(" ")
+
+#리스트에서 최대, 최대인덱스, 최소, 최소인덱스값 찾기
+value=[1,2,3,4,5]
+max(value), value.index(max(value)), min(value), value.index(min(value))
