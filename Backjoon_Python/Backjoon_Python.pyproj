@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Stack\17298(Okensu).py</StartupFile>
+    <StartupFile>BruteForce\1436(Film Director Shum).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BruteForce\1436%28Film Director Shum%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Function\4673%28Self_Num%29.py">
       <SubType>Code</SubType>
     </Compile>
@@ -59,6 +62,7 @@
   <ItemGroup>
     <Folder Include="Function\" />
     <Folder Include="Math\" />
+    <Folder Include="BruteForce\" />
     <Folder Include="Stack\" />
     <Folder Include="String\" />
   </ItemGroup>
