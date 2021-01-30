@@ -19,3 +19,6 @@ max(value), value.index(max(value)), min(value), value.index(min(value))
 
 #리스트 반전
 list.reverse()
+
+#num을 문자열로 반환
+str(num)
