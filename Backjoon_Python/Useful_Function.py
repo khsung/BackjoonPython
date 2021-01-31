@@ -22,3 +22,6 @@ list.reverse()
 
 #num을 문자열로 반환
 str(num)
+
+#리스트에서 최댓값, 최소값, 인덱스 반환
+max(list), min(list), list.index(a)
