@@ -25,3 +25,6 @@ str(num)
 
 #리스트에서 최댓값, 최소값, 인덱스 반환
 max(list), min(list), list.index(a)
+
+#키를 기준으로 정렬하기
+sorted(list, key=lambda x:(x[0],x[1]))
