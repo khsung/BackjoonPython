@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Sort\2751(Sort Number2).py</StartupFile>
+    <StartupFile>Sort\2108(Statistics).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -43,6 +43,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\4948%28Betrand Postulate%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sort\2108%28Statistics%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Sort\2751%28Sort Number2%29.py">
