@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Sort\11650(Location Sort).py</StartupFile>
+    <StartupFile>BruteForce\7568(Bulk).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,6 +24,7 @@
     <Compile Include="BruteForce\1436%28Film Director Shum%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BruteForce\7568%28Bulk%29.py" />
     <Compile Include="Function\4673%28Self_Num%29.py">
       <SubType>Code</SubType>
     </Compile>
