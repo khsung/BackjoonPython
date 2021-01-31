@@ -8,3 +8,4 @@ for i in range(num):
 location.sort()
 for i in range(len(location)):
     print(location[i][0],location[i][1])
+
