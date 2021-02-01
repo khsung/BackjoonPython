@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DivideAndConquer\2740(Matrix Multiplication).py</StartupFile>
+    <StartupFile>BinarySearch\1920(Find Number).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BinarySearch\1920%28Find Number%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="BruteForce\1436%28Film Director Shum%29.py">
       <SubType>Code</SubType>
     </Compile>
@@ -92,6 +95,7 @@
     <Folder Include="Math\" />
     <Folder Include="BruteForce\" />
     <Folder Include="DivideAndConquer\" />
+    <Folder Include="BinarySearch\" />
     <Folder Include="NumberTheory\" />
     <Folder Include="Sort\" />
     <Folder Include="Stack\" />
