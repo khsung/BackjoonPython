@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Sort\10814(Sort By Age).py</StartupFile>
+    <StartupFile>NumberTheory\1934(Least Common Multiple).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -46,6 +46,9 @@
     <Compile Include="Math\4948%28Betrand Postulate%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="NumberTheory\1934%28Least Common Multiple%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Sort\10814%28Sort By Age%29.py">
       <SubType>Code</SubType>
     </Compile>
@@ -82,6 +85,7 @@
     <Folder Include="Function\" />
     <Folder Include="Math\" />
     <Folder Include="BruteForce\" />
+    <Folder Include="NumberTheory\" />
     <Folder Include="Sort\" />
     <Folder Include="Stack\" />
     <Folder Include="String\" />
