@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>BinarySearch\1920(Find Number).py</StartupFile>
+    <StartupFile>BinarySearch\10816(Number Card).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BinarySearch\10816%28Number Card%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="BinarySearch\1920%28Find Number%29.py">
       <SubType>Code</SubType>
     </Compile>
