@@ -15,12 +15,10 @@ for i in range(N):
     temp=map(int,input().split())
     matrixB.append(list(temp))
 
-#for i in range(len(matrixA)):
-#    for j in range(len(matrixB)):
-#        print(matrixA[i][j]*matrixB[j][i],end=" ")
-#    print()
-
-
-    #1  2        -1  -2  0
-    #3  4         0   0  3
-    #5  6
+for i in range(len(matrixA)):
+    for j in range(len(matrixB[0])):
+        num=0
+        for k in range(len(matrixB)):
+            num+=matrixA[i][k]*matrixB[k][j]
+        print(num,end=" ")
+    print()
