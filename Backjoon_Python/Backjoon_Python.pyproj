@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NumberTheory\1934(Least Common Multiple).py</StartupFile>
+    <StartupFile>NumberTheory\2981(Check).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -47,6 +47,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NumberTheory\1934%28Least Common Multiple%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NumberTheory\2981%28Check%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Sort\10814%28Sort By Age%29.py">
