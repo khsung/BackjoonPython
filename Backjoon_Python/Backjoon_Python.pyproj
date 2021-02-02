@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>GreedyAlgorithm\1931(Meeting Room Allocation).py</StartupFile>
+    <StartupFile>GreedyAlgorithm\1541(Lost Parenthesis).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,6 +35,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Function\4673%28Self_Num%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GreedyAlgorithm\1541%28Lost Parenthesis%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GreedyAlgorithm\1931%28Meeting Room Allocation%29.py">
