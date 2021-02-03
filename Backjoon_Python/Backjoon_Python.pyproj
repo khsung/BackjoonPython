@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NumberTheory\9375(Fashion King Shin Hae-bin).py</StartupFile>
+    <StartupFile>NumberTheory\2004(Number of Combination 0).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -68,6 +68,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NumberTheory\1934%28Least Common Multiple%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NumberTheory\2004%28Number of Combination 0%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NumberTheory\2981%28Check%29.py">
