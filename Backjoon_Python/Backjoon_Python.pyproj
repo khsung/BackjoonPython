@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NumberTheory\1010(Bridge).py</StartupFile>
+    <StartupFile>NumberTheory\9375(Fashion King Shin Hae-bin).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -71,6 +71,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NumberTheory\2981%28Check%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NumberTheory\9375%28Fashion King Shin Hae-bin%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Sort\10814%28Sort By Age%29.py">
