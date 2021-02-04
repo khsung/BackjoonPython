@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NumberTheory\2004(Number of Combination 0).py</StartupFile>
+    <StartupFile>Math\2997(4th Number).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -59,6 +59,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\1929%28Find Prime Number%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Math\2997%284th Number%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\4948%28Betrand Postulate%29.py">
