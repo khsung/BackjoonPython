@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Math\2997(4th Number).py</StartupFile>
+    <StartupFile>DivideAndConquer\2630(Making Colored paper).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -31,6 +31,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BruteForce\7568%28Bulk%29.py" />
+    <Compile Include="DivideAndConquer\2630%28Making Colored paper%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DivideAndConquer\2740%28Matrix Multiplication%29.py">
       <SubType>Code</SubType>
     </Compile>
