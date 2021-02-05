@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\2606(Virus).py</StartupFile>
+    <StartupFile>NumberTheory\1475(Room Number).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -77,6 +77,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NumberTheory\1010%28Bridge%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NumberTheory\1475%28Room Number%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NumberTheory\1934%28Least Common Multiple%29.py">
