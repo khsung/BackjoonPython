@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Heap\1927(Min Heap).py</StartupFile>
+    <StartupFile>Geometric\11758(CCW).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -38,6 +38,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Function\4673%28Self_Num%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Geometric\11758%28CCW%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\2606%28Virus%29.py">
@@ -141,6 +144,7 @@
     <Folder Include="GreedyAlgorithm\" />
     <Folder Include="Graph\" />
     <Folder Include="Heap\" />
+    <Folder Include="Geometric\" />
     <Folder Include="NumberTheory\" />
     <Folder Include="Sort\" />
     <Folder Include="Stack\" />
