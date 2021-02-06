@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NumberTheory\1475(Room Number).py</StartupFile>
+    <StartupFile>Queue\11279(Max Heap).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -94,6 +94,9 @@
     <Compile Include="NumberTheory\9375%28Fashion King Shin Hae-bin%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Queue\11279%28Max Heap%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Sort\10814%28Sort By Age%29.py">
       <SubType>Code</SubType>
     </Compile>
@@ -134,6 +137,7 @@
     <Folder Include="BinarySearch\" />
     <Folder Include="GreedyAlgorithm\" />
     <Folder Include="Graph\" />
+    <Folder Include="Queue\" />
     <Folder Include="NumberTheory\" />
     <Folder Include="Sort\" />
     <Folder Include="Stack\" />
