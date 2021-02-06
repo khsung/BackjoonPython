@@ -31,3 +31,8 @@ sorted(list, key=lambda x:(x[0],x[1]))
 
 #리스트의 개수에 대한 함수 모듈
 import collections
+
+#최소힙 모듈
+import heapq
+heapq.heappush(array, number)
+heapq.heappop(array)
