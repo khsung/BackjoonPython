@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Queue\11279(Max Heap).py</StartupFile>
+    <StartupFile>Heap\1927(Min Heap).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -55,6 +55,9 @@
     <Compile Include="GreedyAlgorithm\1931%28Meeting Room Allocation%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Heap\1927%28Min Heap%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Math\1011%28Fly me to the Alpha Centauri%29.py">
       <SubType>Code</SubType>
     </Compile>
@@ -94,7 +97,7 @@
     <Compile Include="NumberTheory\9375%28Fashion King Shin Hae-bin%29.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Queue\11279%28Max Heap%29.py">
+    <Compile Include="Heap\11279%28Max Heap%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Sort\10814%28Sort By Age%29.py">
@@ -137,7 +140,7 @@
     <Folder Include="BinarySearch\" />
     <Folder Include="GreedyAlgorithm\" />
     <Folder Include="Graph\" />
-    <Folder Include="Queue\" />
+    <Folder Include="Heap\" />
     <Folder Include="NumberTheory\" />
     <Folder Include="Sort\" />
     <Folder Include="Stack\" />
