@@ -1,25 +1,18 @@
-#17298 Okensu  미완성
-stack=[]
-tempstack=[]
-max=0
+#17298 오큰수
+import sys
+templist=[]
+res_array=[]
 num=int(input())
-res=[]
-a=input()
-stack=a.split(" ")
-for i in range(num):
-    if int(stack[-1])>max:
-        res.append(-1)
-        #print("-1",end=" ")
-        max=int(stack[-1])
-        stack.pop()
-        tempstack.append(max)
-    else:
-        for j in reversed(range(len(tempstack))):
-            if tempstack[j]>int(stack[-1]):
-                #print(tempstack[j],end=" ")
-                res.append(tempstack[j])
-                tempstack.append(int(stack.pop()))
-                break
-res.reverse()
-for i in range(len(res)):
-    print(res[i],end=" ")
+stack_array=list(map(int, sys.stdin.readline().split()))
+while len(stack_array)>0:
+    temp=stack_array.pop()
+    check=0
+    for i in range(len(templist)):
+        if templist[i]>temp:
+            res_array.insert(0,templist[i])
+            check=1
+            break
+    if check==0:
+        res_array.insert(0,-1)
+    templist.insert(0,temp)
+print(res_array)
