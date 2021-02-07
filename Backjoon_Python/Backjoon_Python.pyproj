@@ -85,6 +85,9 @@
     <Compile Include="Math\4948%28Betrand Postulate%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Math\9020%28Goldbach%27s Guess%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="NumberTheory\1010%28Bridge%29.py">
       <SubType>Code</SubType>
     </Compile>
