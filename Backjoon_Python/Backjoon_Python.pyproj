@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Math\2475(NumberOfVerification).py</StartupFile>
+    <StartupFile>Math\2525(Oven Clock).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -80,6 +80,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\2475%28NumberOfVerification%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Math\2525%28Oven Clock%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\2997%284th Number%29.py">
