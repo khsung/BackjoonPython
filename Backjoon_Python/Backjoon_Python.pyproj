@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Stack\17298(Okensu).py</StartupFile>
+    <StartupFile>DynamicProgramming\1932(Integer Triangle).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,6 +35,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DivideAndConquer\2740%28Matrix Multiplication%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\1932%28Integer Triangle%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Function\4673%28Self_Num%29.py">
@@ -145,6 +148,7 @@
     <Folder Include="Graph\" />
     <Folder Include="Heap\" />
     <Folder Include="Geometric\" />
+    <Folder Include="DynamicProgramming\" />
     <Folder Include="NumberTheory\" />
     <Folder Include="Sort\" />
     <Folder Include="Stack\" />
