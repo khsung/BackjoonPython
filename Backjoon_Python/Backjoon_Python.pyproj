@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Backtracking\15652(N and M(4)).py</StartupFile>
+    <StartupFile>GreedyAlgorithm\2109(Tour Lecture).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -65,6 +65,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GreedyAlgorithm\1931%28Meeting Room Allocation%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GreedyAlgorithm\2109%28Tour Lecture%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Heap\1927%28Min Heap%29.py">
