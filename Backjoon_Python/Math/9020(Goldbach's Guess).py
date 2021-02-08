@@ -7,5 +7,17 @@ for i in range(2,len(prime)):
         temp=i
         tempindex=2*temp
         while tempindex<=10000:
-            prime[tempindex]=1
+            prime[tempindex]=0
             tempindex+=temp
+num=int(input())
+for i in range(num):
+    a=int(input())
+    part_a=a//2
+    part_b=a//2
+    while True:
+        if prime[part_a]==1 and prime[part_b]==1:
+            print(part_a,part_b)
+            break
+        else:
+            part_a-=1
+            part_b+=1
