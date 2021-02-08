@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Backtracking\15650(N and M(2)).py</StartupFile>
+    <StartupFile>Backtracking\15651(N and M(3)).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Backtracking\15651%28N and M%283%29%29.py" />
     <Compile Include="Backtracking\15650%28N and M%282%29%29.py" />
     <Compile Include="Backtracking\15649%28N and M%281%29%29.py">
       <SubType>Code</SubType>
