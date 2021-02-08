@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Math\4948(Betrand Postulate).py</StartupFile>
+    <StartupFile>Backtracking\15649(N and M(1)).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Backtracking\15649%28N and M%281%29%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="BinarySearch\10816%28Number Card%29.py">
       <SubType>Code</SubType>
     </Compile>
@@ -164,6 +167,7 @@
     <Folder Include="Heap\" />
     <Folder Include="Geometric\" />
     <Folder Include="DynamicProgramming\" />
+    <Folder Include="Backtracking\" />
     <Folder Include="NumberTheory\" />
     <Folder Include="Sort\" />
     <Folder Include="Stack\" />
