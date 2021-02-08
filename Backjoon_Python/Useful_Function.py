@@ -36,3 +36,8 @@ import collections
 import heapq
 heapq.heappush(array, number)
 heapq.heappop(array)
+
+#반복제한 설정과 입력받기
+import sys
+sys.setrecursionlimit(10**6)
+sys.stdin.readline()
