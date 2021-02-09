@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>GreedyAlgorithm\2109(Tour Lecture).py</StartupFile>
+    <StartupFile>Backtracking\9663(N-Queen).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,9 @@
     <Compile Include="Backtracking\15651%28N and M%283%29%29.py" />
     <Compile Include="Backtracking\15650%28N and M%282%29%29.py" />
     <Compile Include="Backtracking\15649%28N and M%281%29%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Backtracking\9663%28N-Queen%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BinarySearch\10816%28Number Card%29.py">
