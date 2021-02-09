@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Backtracking\9663(N-Queen).py</StartupFile>
+    <StartupFile>DynamicProgramming\11049(Matrix Multiplication Order).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -44,6 +44,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DivideAndConquer\2740%28Matrix Multiplication%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\11049%28Matrix Multiplication Order%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\1932%28Integer Triangle%29.py">
