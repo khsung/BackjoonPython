@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DynamicProgramming\11049(Matrix Multiplication Order).py</StartupFile>
+    <StartupFile>Graph\1260(DFS and BFS).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -61,7 +61,7 @@
     <Compile Include="Graph\2606%28Virus%29.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Graph\DFS and BFS.py">
+    <Compile Include="Graph\1260%28DFS and BFS%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GreedyAlgorithm\13305%28Gas Station%29.py">

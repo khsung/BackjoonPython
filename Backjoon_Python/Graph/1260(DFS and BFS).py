@@ -10,18 +10,19 @@ for i in range(m):
     graph[int(b) - 1][int(a) - 1]+=1
 
 #dfs
-nodelist = []
 visited = [0 for i in range(n)]
-nodelist.append(v-1)
-while len(nodelist)>0:
-    tempnode=nodelist.pop()
-    if visited[tempnode]==0:
-        print(tempnode+1,end=" ")
-        visited[tempnode]=1
-        for i in range(len(graph[tempnode])-1,-1,-1):
-            if graph[tempnode][i]==1 and visited[i]==0:
-                nodelist.append(i)
+def dfs(start):
+    global visited
+    global graph
+    print(start,end=" ")
+    for i in range(len(graph)):
+        if graph[start-1][i]==1 and visited[i]==0:
+            visited[i]=1
+            dfs(i+1)
+visited[v-1]=1
+dfs(v)
 print()
+
 #bfs
 nodelist = []
 visited = [0 for i in range(n)]
