@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\1012(Organic Cabbage).py</StartupFile>
+    <StartupFile>NumberTheory\11051(Binomial Coefficient2).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -122,6 +122,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NumberTheory\1010%28Bridge%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NumberTheory\11051%28Binomial Coefficient2%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NumberTheory\1475%28Room Number%29.py">
