@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>TwoPointer\1806(Subtotal).py</StartupFile>
+    <StartupFile>DivideAndConquer\1992(Quad Tree).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -41,6 +41,9 @@
     </Compile>
     <Compile Include="BruteForce\7568%28Bulk%29.py" />
     <Compile Include="DivideAndConquer\1780%28Number Of Paper%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DivideAndConquer\1992%28Quad Tree%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DivideAndConquer\2630%28Making Colored paper%29.py">
