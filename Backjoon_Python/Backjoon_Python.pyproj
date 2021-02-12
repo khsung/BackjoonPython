@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\1012(Organic Cabbage).py</StartupFile>
+    <StartupFile>DynamicProgramming\1904(01Tile).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -47,6 +47,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\11049%28Matrix Multiplication Order%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\1904%2801Tile%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\1932%28Integer Triangle%29.py">
