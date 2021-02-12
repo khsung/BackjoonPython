@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DivideAndConquer\1780(Number Of Paper).py</StartupFile>
+    <StartupFile>TwoPointer\1806(Subtotal).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -181,6 +181,9 @@
     <Compile Include="String\2941%28Croatia%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="TwoPointer\1806%28Subtotal%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Useful_Function.py" />
   </ItemGroup>
   <ItemGroup>
@@ -195,6 +198,7 @@
     <Folder Include="Geometric\" />
     <Folder Include="DynamicProgramming\" />
     <Folder Include="Backtracking\" />
+    <Folder Include="TwoPointer\" />
     <Folder Include="NumberTheory\" />
     <Folder Include="Sort\" />
     <Folder Include="Stack\" />
