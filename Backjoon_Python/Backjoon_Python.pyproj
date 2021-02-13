@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DivideAndConquer\1992(Quad Tree).py</StartupFile>
+    <StartupFile>Graph\2178(Maze Search).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -68,6 +68,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\1012%28Organic Cabbage%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graph\2178%28Maze Search%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\2606%28Virus%29.py">
