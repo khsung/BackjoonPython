@@ -181,10 +181,13 @@
     <Compile Include="Sort\2751%28Sort Number2%29.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Stack\17298%28Okensu%29.py">
+    <Compile Include="StackAndQueue\17298%28Okensu%29.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Stack\1874%28Stack Sequence%29.py">
+    <Compile Include="StackAndQueue\1874%28Stack Sequence%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StackAndQueue\1966%28Printer Queue%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="String\1316%28Group word checker%29.py">
@@ -213,7 +216,7 @@
     <Folder Include="TwoPointer\" />
     <Folder Include="NumberTheory\" />
     <Folder Include="Sort\" />
-    <Folder Include="Stack\" />
+    <Folder Include="StackAndQueue\" />
     <Folder Include="String\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
