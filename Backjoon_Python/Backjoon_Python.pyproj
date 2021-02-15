@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>StackAndQueue\1966(Printer Queue).py</StartupFile>
+    <StartupFile>StackAndQueue\1021(Rotating Queue).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -179,6 +179,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Sort\2751%28Sort Number2%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StackAndQueue\1021%28Rotating Queue%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StackAndQueue\17298%28Okensu%29.py">
