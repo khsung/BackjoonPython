@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>StackAndQueue\5430(AC).py</StartupFile>
+    <StartupFile>Graph\2206(Breaking And Moving Walls).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -71,6 +71,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\2178%28Maze Search%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graph\2206%28Breaking And Moving Walls%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\2606%28Virus%29.py">
