@@ -41,3 +41,7 @@ heapq.heappop(array)
 import sys
 sys.setrecursionlimit(10**6)
 sys.stdin.readline()
+
+#얕은 복사와 깊은 복사
+import copy
+b=copy.copy(a); b=copy.deepcopy(a)
