@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>StackAndQueue\1021(Rotating Queue).py</StartupFile>
+    <StartupFile>StackAndQueue\5430(AC).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -191,6 +191,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StackAndQueue\1966%28Printer Queue%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StackAndQueue\5430%28AC%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="String\1316%28Group word checker%29.py">
