@@ -73,6 +73,9 @@
     <Compile Include="Graph\11404%28Floyd%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Graph\1717%28Representation Of Set%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Graph\2178%28Maze Search%29.py">
       <SubType>Code</SubType>
     </Compile>
