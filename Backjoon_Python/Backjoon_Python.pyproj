@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\1717(Representation Of Set).py</StartupFile>
+    <StartupFile>11725(FInding The Parent Of A Tree).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="11725%28FInding The Parent Of A Tree%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Backtracking\15652%28N and M%284%29%29.py" />
     <Compile Include="Backtracking\15651%28N and M%283%29%29.py" />
     <Compile Include="Backtracking\15650%28N and M%282%29%29.py" />
