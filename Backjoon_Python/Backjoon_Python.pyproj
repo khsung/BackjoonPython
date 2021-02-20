@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>11725(FInding The Parent Of A Tree).py</StartupFile>
+    <StartupFile>Graph\1753(Shortest Path).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -77,6 +77,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\1717%28Representation Of Set%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graph\1753%28Shortest Path%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\2178%28Maze Search%29.py">
