@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\1753(Shortest Path).py</StartupFile>
+    <StartupFile>test.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="11725%28FInding The Parent Of A Tree%29.py">
+    <Compile Include="Tree\11725%28FInding The Parent Of A Tree%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Backtracking\15652%28N and M%284%29%29.py" />
@@ -217,6 +217,9 @@
     <Compile Include="String\2941%28Croatia%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="TwoPointer\1806%28Subtotal%29.py">
       <SubType>Code</SubType>
     </Compile>
@@ -234,6 +237,7 @@
     <Folder Include="Geometric\" />
     <Folder Include="DynamicProgramming\" />
     <Folder Include="Backtracking\" />
+    <Folder Include="Tree\" />
     <Folder Include="TwoPointer\" />
     <Folder Include="NumberTheory\" />
     <Folder Include="Sort\" />
