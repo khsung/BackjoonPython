@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Graph\10026%28적록색약%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Tree\11725%28FInding The Parent Of A Tree%29.py">
       <SubType>Code</SubType>
     </Compile>
