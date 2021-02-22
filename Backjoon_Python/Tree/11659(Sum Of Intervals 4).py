@@ -1,6 +1,7 @@
-#11659 구간 합 구하기 4(미완성)
+#11659 구간 합 구하기 4
+import sys
 n,m=map(int,input().split())
-numbers=list(map(int,input().split()))
+numbers=list(map(int,sys.stdin.readline().split()))
 segmenttree=[0 for i in range(4*len(numbers))]
 maxindex=0
 def initsegment(left,right,index):
@@ -16,10 +17,7 @@ def initsegment(left,right,index):
         return segmenttree[index]
 
 initsegment(0,n-1,1)
-print("segment =",segmenttree)
 def segment(left,right,i,j,index):
-    print("i,j =",i,j)
-    print("left,right =",left,right)
     global segmenttree
     if left==i and right==j:
         return segmenttree[index]
@@ -30,9 +28,9 @@ def segment(left,right,i,j,index):
         elif i>mid:
             return segment(mid+1,right,i,j,2*index+1)
         else:
-            sum=segment(left,mid,i,j,2*index)+segment(mid+1,right,i,j,2*index+1)
+            sum=segment(left,mid,i,mid,2*index)+segment(mid+1,right,mid+1,j,2*index+1)
             return sum
 
 for i in range(m):
-    a,b=map(int,input().split())
+    a,b=map(int,sys.stdin.readline().split())
     print(segment(0,n-1,a-1,b-1,1))
