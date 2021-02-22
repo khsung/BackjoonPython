@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Contest\2021 ICPC Sinchon Winter Algorithm Camp Contest Open.py</StartupFile>
+    <StartupFile>Tree\11659(Sum Of Intervals 4).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Graph\10026%28적록색약%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tree\11659%28Sum Of Intervals 4%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tree\11725%28FInding The Parent Of A Tree%29.py">
