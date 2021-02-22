@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tree\11659(Sum Of Intervals 4).py</StartupFile>
+    <StartupFile>StackAndQueue\2161(Card 1).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DynamicProgramming\2747%28Fibonacci Number%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Graph\10026%28적록색약%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StackAndQueue\2161%28Card 1%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tree\11659%28Sum Of Intervals 4%29.py">
