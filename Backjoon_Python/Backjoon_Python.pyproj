@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tree\1991(Tree Traversal).py</StartupFile>
+    <StartupFile>StackAndQueue\10845(Queue).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\10026%28적록색약%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StackAndQueue\10845%28Queue%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StackAndQueue\2161%28Card 1%29.py">
