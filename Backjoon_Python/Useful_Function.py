@@ -45,3 +45,7 @@ sys.stdin.readline()
 #얕은 복사와 깊은 복사
 import copy
 b=copy.copy(a); b=copy.deepcopy(a)
+
+#날짜 원하는 형태 출력
+from datetime import datetime
+print(datetime.today().strftime("%Y-%m-%d"))

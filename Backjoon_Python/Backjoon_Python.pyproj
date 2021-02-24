@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>StackAndQueue\1158(Josephus Problem).py</StartupFile>
+    <StartupFile>Function\10699(Today).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DynamicProgramming\2747%28Fibonacci Number%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Function\10699%28Today%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\10026%28적록색약%29.py">
