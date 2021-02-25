@@ -8,15 +8,8 @@
 #print(tree.data)
 #print(tree.lchild)
 #print(tree.rchild.data)
-n=int(input())
-res=[0,0]
-for i in range(n):
-    a=int(input())
-    if a==1:
-        res[1]+=1
-    else:
-        res[0]+=1
-if res[0]>res[1]:
-    print("J")
-else:
-    print("")
+sum=int(input())
+for i in range(9):
+    temp=int(input())
+    sum-=temp
+print(sum)
