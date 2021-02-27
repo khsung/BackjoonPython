@@ -1,35 +1,22 @@
 #11725 트리의 부모 찾기
 n=int(input())
-save_path=[]
-tree_parent=[0 for i in range(n+1)]
+parent=visited=[0 for i in range(n)]
+graph=[[]for j in range(n)]
 for i in range(n-1):
-    a,b=map(int, input().split())
-    if a==1:
-        tree_parent[b]=a
-    elif b==1:
-        tree_parent[a]=b
-    elif tree_parent[a]==0 and tree_parent[b]==0:
-        save_path.append([a,b])
-    else:
-        if tree_parent[a]==0:
-            tree_parent[a]=b
-        elif tree_parent[b]==0:
-            tree_parent[b]=a
-        #else:
-        #    print("=")
-
-while len(save_path)>0:
-    a=save_path[0][0]
-    b=save_path[0][1]
-    if tree_parent[a]==0:
-        tree_parent[a]=b
-        save_path.pop(0)
-    elif tree_parent[b]==0:
-        tree_parent[b]=a
-        save_path.pop(0)
-    else:
-        save_path.pop(0)
-        save_path.append([a,b])
-    
-for i in range(2,n+1):
-    print(tree_parent[i])
+    a,b=map(int,input().split())
+    graph[a-1].append(b-1)
+    graph[b-1].append(a-1)
+visited[0]=1
+queue=[]
+queue.append([0,graph[0]])
+while len(queue)>0:
+    temp=queue.pop(0)
+    pnode=temp[0]
+    edgenode=temp[1]
+    for i in range(len(edgenode)):
+        if visited[edgenode[i]]==0:
+            visited[edgenode[i]]=1
+            parent[edgenode[i]]=pnode+1
+            queue.append([edgenode[i],graph[edgenode[i]]])
+for i in range(1,n):
+    print(parent[i])
