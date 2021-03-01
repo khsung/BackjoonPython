@@ -30,7 +30,10 @@
     <Compile Include="Function\10699%28Today%29.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Graph\10026%28적록색약%29.py">
+    <Compile Include="Graph\10026%28Red Green Medicine%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graph\1697%28Hide And Seek%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Heap\11286%28Absolute Value Heap%29.py">
