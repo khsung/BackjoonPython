@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>StackAndQueue\2493(Tower).py</StartupFile>
+    <StartupFile>Tree\2042(Finding The Sum Of Intervals).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -267,6 +267,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tree\1991%28Tree Traversal%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tree\2042%28Finding The Sum Of Intervals%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="TwoPointer\1806%28Subtotal%29.py">
