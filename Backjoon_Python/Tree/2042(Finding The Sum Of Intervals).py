@@ -29,12 +29,15 @@ def findsum(left,right,first,second,arr,index):
         return sum
 
 def update(left,right,posi,diff,index):
+    global segment
     segment[index]+=diff
     mid=(left+right)//2
     if left==right:
         return
     elif mid>=posi:
         return update(left,mid,posi,diff,2*index)
+    else:
+        return update(mid+1,right,posi,diff,2*index+1)
 
 for i in range(n):
     temp=int(input())
@@ -45,8 +48,7 @@ for i in range(m+k):
     a,b,c=map(int,input().split())
     if a==1:
         diff=c-arr[b-1]
-        print(segment)
-        #변경
+        arr[b-1]=c
+        update(0,n-1,b-1,diff,1)
     else:
-        #출력
         print(findsum(0,n-1,b-1,c-1,arr,1))
