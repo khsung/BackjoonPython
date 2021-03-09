@@ -8,8 +8,3 @@
 #print(tree.data)
 #print(tree.lchild)
 #print(tree.rchild.data)
-sum=int(input())
-for i in range(9):
-    temp=int(input())
-    sum-=temp
-print(sum)
