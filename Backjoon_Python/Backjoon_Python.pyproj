@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>GreedyAlgorithm\1439(Flip).py</StartupFile>
+    <StartupFile>GreedyAlgorithm\2720(Laundry Boss).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -12,6 +12,8 @@
     <Name>Backjoon_Python</Name>
     <RootNamespace>Backjoon_Python</RootNamespace>
     <TestFramework>Pytest</TestFramework>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,6 +43,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GreedyAlgorithm\1439%28Flip%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GreedyAlgorithm\2720%28Laundry Boss%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GreedyAlgorithm\5585%28Change%29.py">
@@ -299,6 +304,9 @@
     <Folder Include="Sort\" />
     <Folder Include="StackAndQueue\" />
     <Folder Include="String\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.9" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
