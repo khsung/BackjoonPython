@@ -1,4 +1,4 @@
-#2720 세탁소 사장 동혁 합격
+#2720 세탁소 사장 동혁
 n=int(input())
 for i in range(n):
     temp=int(input())
