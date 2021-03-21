@@ -5,14 +5,14 @@ maxsum=0
 for i in range(n):
     a,b=map(int,input().split())
     schedule.append([a,b])
-for i in range(1,n+1):
+for i in range(n):
     tempsum=0
     day=i
-    for j in range(i,n+1):
-        if schedule[j-1][0]+i-1<n and day<=j and day+schedule[j-1][0]<=n:
-            tempsum+=schedule[j-1][1]
-            day+=schedule[j-1][0]
-            print("j =",j,"day =",day)
+    for j in range(i,n):
+        if day+schedule[j][0]-1<n-1 and day<=j:
+            day=day+schedule[j][0]
+            tempsum+=schedule[j][1]
+            print(j,day,schedule[j][0],schedule[j][1])
     if maxsum<tempsum:
         maxsum=tempsum
     print("tempsum =",tempsum)
