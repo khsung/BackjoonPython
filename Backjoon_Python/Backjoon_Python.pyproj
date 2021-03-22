@@ -30,6 +30,9 @@
     <Compile Include="BruteForce\2309%28Seven Dwarfs%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DynamicProgramming\11726%282xn Tiling%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DynamicProgramming\11727%282xn Tiling2%29.py">
       <SubType>Code</SubType>
     </Compile>
