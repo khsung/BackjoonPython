@@ -15,8 +15,22 @@ for i in range(testcase):
             for x in range(m):
                 if graph[y][x]==1:
                     queue.append([y,x])
-                    graph[y][x]=0
                     while len(queue)>0:
                         tempy,tempx=queue.pop(0)
-
+                        graph[tempy][tempx]=0
+                        if tempx-1>=0 and graph[tempy][tempx-1]==1:
+                            queue.append([tempy,tempx-1])
     print(cnt)
+    #for j in range(k):
+    #    target=list(map(int,input().split()))
+    #    graph[target[1]][target[0]]=1
+    #    for y in range(n):
+    #        for x in range(m):
+    #            if graph[y][x]==1:
+    #                queue.append([y,x])
+    #                while len(queue)>0:
+    #                    tempy,tempx=queue.pop(0)
+    #                    graph[tempy][tempx]=0
+    #                    if tempx-1>=0 and graph[tempy][tempx-1]==1:
+    #                        queue.append([tempy,tempx-1])
+    #print(cnt)
