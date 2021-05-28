@@ -114,7 +114,7 @@
     <Compile Include="Backtracking\9663%28N-Queen%29.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BinarySearch\10816%28Number Card%29.py">
+    <Compile Include="BinarySearch\10816%28Number Card2%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BinarySearch\1920%28Find Number%29.py">
