@@ -1,22 +1,14 @@
 #10816 숫자 카드2
-import sys
-sys.setrecursionlimit(10**6)
-def binary(array1,number,left,right):
-    mid=(left+right)//2
-    if array1[mid]==number:
-        return array1.count(number)
-    elif left==right:
-        return 0
+n=int(input())
+n_arr=list(map(int,input().split()))
+m=int(input())
+m_arr=list(map(int,input().split()))
+n_arr_set=list(set(n_arr))
+n_arr_dic={}
+for i in range(len(n_arr_set)):
+    n_arr_dic[n_arr_set[i]]=n_arr.count(n_arr_set[i])
+for i in m_arr:
+    if i in n_arr_dic:
+        print(n_arr_dic[i],end=" ")
     else:
-        if array1[mid]>number:
-            return binary(array1,number,left,mid-1)
-        else:
-            return binary(array1,number,mid+1,right)
-
-num1=int(input())
-array1=list(map(int,input().split()))
-num2=int(input())
-array2=list(map(int,input().split()))
-array1.sort()
-for i in range(len(array2)):
-    print(binary(array1,array2[i],0,len(array1)),end=" ")
+        print(0,end=" ")
