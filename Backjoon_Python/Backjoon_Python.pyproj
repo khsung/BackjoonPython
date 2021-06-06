@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Math\10539(Soobin and Sequence).py</StartupFile>
+    <StartupFile>Math\17269(Name match test).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -73,6 +73,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\10539%28Soobin and Sequence%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Math\17269%28Name match test%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\2960%28Eratosthenes%27 Sieve%29.py">
