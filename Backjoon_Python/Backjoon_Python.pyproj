@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Implement\17389(Bonus Score).py</StartupFile>
+    <StartupFile>Hash\16165(Girl group master Junseok).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -67,6 +67,17 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GreedyAlgorithm\5585%28Change%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Greedy\13305%28Gas Station%29.py" />
+    <Compile Include="Greedy\13904%28Assignment%29.py" />
+    <Compile Include="Greedy\1439%28Flip%29.py" />
+    <Compile Include="Greedy\1541%28Lost Parenthesis%29.py" />
+    <Compile Include="Greedy\1931%28Meeting Room Allocation%29.py" />
+    <Compile Include="Greedy\2109%28Tour Lecture%29.py" />
+    <Compile Include="Greedy\2720%28Laundry Boss%29.py" />
+    <Compile Include="Greedy\5585%28Change%29.py" />
+    <Compile Include="Hash\16165%28Girl group master Junseok%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Heap\11286%28Absolute Value Heap%29.py">
@@ -326,6 +337,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Function\" />
+    <Folder Include="GreedyAlgorithm\" />
     <Folder Include="Math\" />
     <Folder Include="BruteForce\" />
     <Folder Include="DivideAndConquer\" />
@@ -338,6 +350,7 @@
     <Folder Include="Backtracking\" />
     <Folder Include="Contest\" />
     <Folder Include="Implement\" />
+    <Folder Include="Hash\" />
     <Folder Include="Tree\" />
     <Folder Include="TwoPointer\" />
     <Folder Include="NumberTheory\" />
