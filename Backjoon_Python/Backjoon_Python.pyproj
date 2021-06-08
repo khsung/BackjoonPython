@@ -54,7 +54,7 @@
     <Compile Include="Graph\1697%28Hide And Seek%29.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="GreedyAlgorithm\10162%28Microwave%29.py">
+    <Compile Include="Greedy\10162%28Microwave%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GreedyAlgorithm\13904%28Assignment%29.py">
@@ -330,7 +330,7 @@
     <Folder Include="BruteForce\" />
     <Folder Include="DivideAndConquer\" />
     <Folder Include="BinarySearch\" />
-    <Folder Include="GreedyAlgorithm\" />
+    <Folder Include="Greedy\" />
     <Folder Include="Graph\" />
     <Folder Include="Heap\" />
     <Folder Include="Geometric\" />
