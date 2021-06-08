@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Math\17269(Name match test).py</StartupFile>
+    <StartupFile>Implement\17389(Bonus Score).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -70,6 +70,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Heap\11286%28Absolute Value Heap%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Implement\17389%28Bonus Score%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\10539%28Soobin and Sequence%29.py">
@@ -334,6 +337,7 @@
     <Folder Include="DynamicProgramming\" />
     <Folder Include="Backtracking\" />
     <Folder Include="Contest\" />
+    <Folder Include="Implement\" />
     <Folder Include="Tree\" />
     <Folder Include="TwoPointer\" />
     <Folder Include="NumberTheory\" />
