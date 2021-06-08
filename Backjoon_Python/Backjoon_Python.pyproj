@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Greedy\17224(Why did APC become a subtask competition).py</StartupFile>
+    <StartupFile>Math\2484(Four Dice).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -93,6 +93,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\17269%28Name match test%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Math\2484%28Four Dice%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\2960%28Eratosthenes%27 Sieve%29.py">
@@ -208,9 +211,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\7576%28Tomato%29.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="GreedyAlgorithm\13305%28Gas Station%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GreedyAlgorithm\1541%28Lost Parenthesis%29.py">
