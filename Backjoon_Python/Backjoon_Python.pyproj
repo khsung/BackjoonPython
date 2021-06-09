@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Implement\16675(Two Hands).py</StartupFile>
+    <StartupFile>String\9093(Word Flip).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -126,6 +126,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="String\1343%28Polomino%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="String\9093%28Word Flip%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test.py">
