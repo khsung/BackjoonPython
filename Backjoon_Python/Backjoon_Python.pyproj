@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>BruteForce\14620(Flower Road).py</StartupFile>
+    <StartupFile>Graph\16956(Wolf and Sheep).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -52,6 +52,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\10026%28Red Green Medicine%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graph\16956%28Wolf and Sheep%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\1697%28Hide And Seek%29.py">
