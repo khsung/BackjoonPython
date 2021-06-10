@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>String\17413(Word Flip2).py</StartupFile>
+    <StartupFile>BruteForce\14620(Flower Road).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,6 +28,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BruteForce\14501%28Leave%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BruteForce\14620%28Flower Road%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BruteForce\2309%28Seven Dwarfs%29.py">
