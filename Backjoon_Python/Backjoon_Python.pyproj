@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DynamicProgramming\11053(Longest Increasing Subsequence).py</StartupFile>
+    <StartupFile>DynamicProgramming\11722(Longest Decreasing Subsequence).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -40,6 +40,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\11053%28Longest Increasing Subsequence%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\11055%28Largest Increasing Subsequence%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\11722%28Longest Decreasing Subsequence%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\11726%282xn Tiling%29.py">
