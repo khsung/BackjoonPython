@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DynamicProgramming\14002(Longest Increasing Subsequence 4).py</StartupFile>
+    <StartupFile>Implement\2167(Sum of 2D Array).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -111,6 +111,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Implement\17389%28Bonus Score%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Implement\2167%28Sum of 2D Array%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\10539%28Soobin and Sequence%29.py">
