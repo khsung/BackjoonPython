@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Implement\2167(Sum of 2D Array).py</StartupFile>
+    <StartupFile>Implement\16676(Decorate Geunwoo's Diary).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -105,6 +105,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Implement\16675%28Two Hands%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Implement\16676%28Decorate Geunwoo%27s Diary%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Implement\16926%28Array Rotation 1%29.py">
