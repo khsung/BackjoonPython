@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Implement\16676(Decorate Geunwoo's Diary).py</StartupFile>
+    <StartupFile>Greedy\1960(Create Matrix).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -95,6 +95,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Greedy\1931%28Meeting Room Allocation%29.py" />
+    <Compile Include="Greedy\1960%28Create Matrix%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Greedy\2109%28Tour Lecture%29.py" />
     <Compile Include="Greedy\2720%28Laundry Boss%29.py" />
     <Compile Include="Greedy\5585%28Change%29.py" />
