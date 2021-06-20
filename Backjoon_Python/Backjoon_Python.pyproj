@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Greedy\2217(Rope).py</StartupFile>
+    <StartupFile>Greedy\1789(Sum of Numbers).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -95,6 +95,9 @@
     <Compile Include="Greedy\1439%28Flip%29.py" />
     <Compile Include="Greedy\1541%28Lost Parenthesis%29.py" />
     <Compile Include="Greedy\17224%28Why did APC become a subtask competition%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Greedy\1789%28Sum of Numbers%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Greedy\1931%28Meeting Room Allocation%29.py" />
