@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Greedy\1789(Sum of Numbers).py</StartupFile>
+    <StartupFile>DynamicProgramming\11054(Longest Bitonic Subsequence).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -40,6 +40,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\11053%28Longest Increasing Subsequence%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\11054%28Longest Bitonic Subsequence%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\11055%28Largest Increasing Subsequence%29.py">
