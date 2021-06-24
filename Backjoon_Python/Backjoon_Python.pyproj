@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Hash\15829(Hashing).py</StartupFile>
+    <StartupFile>BinarySearch\1654(LAN Cable Cut).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BinarySearch\10815%28Number Card%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BinarySearch\1654%28LAN Cable Cut%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BruteForce\14501%28Leave%29.py">
