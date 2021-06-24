@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\14940(Easy Shortest Distance).py</StartupFile>
+    <StartupFile>String\1259(Palindrome Number).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -171,6 +171,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StackAndQueue\3190%28Snake%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="String\1259%28Palindrome Number%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="String\1343%28Polomino%29.py">
