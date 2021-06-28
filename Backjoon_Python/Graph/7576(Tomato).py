@@ -1,9 +1,10 @@
 #7576 토마토
 import copy,sys
+from collections import deque
 m,n=map(int,input().split())
 square=[]
 visited=[[0 for i in range(m)]for j in range(n)]
-tomatoinfo=[]
+tomatoinfo=deque()
 check=True
 for i in range(n):
     temp=list(map(int,sys.stdin.readline().split()))
@@ -16,7 +17,7 @@ while len(tomatoinfo)>0:
     x=tomatoinfo[0][0]
     y=tomatoinfo[0][1]
     cnt=tomatoinfo[0][2]
-    tomatoinfo.pop(0)
+    tomatoinfo.popleft()
     if x-1>=0 and square[x-1][y]==0 and visited[x-1][y]==0:
         visited[x-1][y]=1
         square[x-1][y]=1
