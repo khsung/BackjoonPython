@@ -1,31 +1,20 @@
 #11723 집합
-dic={}
+import sys
 n=int(input())
-temp_dic={}
-for i in range(20):
-    temp_dic[i+1]=1
+S=[0 for i in range(20)]
 for i in range(n):
-    option=list(input().split())
-    if len(option)==2:
-        num=int(option[1])
-        if option[0]=="add":
-            if num not in dic:
-                dic[num]=1
-        elif option[0]=="remove":
-            if num in dic:
-                del dic[num]
-        elif option[0]=="check":
-            if num in dic:
-                print(dic[num])
-            else:
-                print(0)
-        elif option[0]=="toggle":
-            if num in dic:
-                del dic[num]
-            else:
-                dic[num]=1
-    else:
-        if option[0]=="all":
-            dic=temp_dic.copy()
+    op=sys.stdin.readline().split()
+    if len(op)==1:
+        if op[0]=='all':
+            S=[1 for i in range(20)]
         else:
-            dic={}
+            S=[0 for i in range(20)]
+    else:
+        if op[0]=='add':
+            S[int(op[1])-1]=1
+        elif op[0]=='remove':
+            S[int(op[1])-1]=0
+        elif op[0]=='check':
+            print(S[int(op[1])-1])
+        else:
+            S[int(op[1])-1]=(S[int(op[1])-1]+1)%2
