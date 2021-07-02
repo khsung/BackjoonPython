@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>String\1764(Off Brand).py</StartupFile>
+    <StartupFile>DynamicProgramming\1463(Make It 1).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -61,6 +61,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\14002%28Longest Increasing Subsequence 4%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\1463%28Make It 1%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\2747%28Fibonacci Number%29.py">
