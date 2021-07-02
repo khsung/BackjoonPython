@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Implement\11723(Set).py</StartupFile>
+    <StartupFile>String\1764(Off Brand).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -195,6 +195,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="String\17413%28Word Flip2%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="String\1764%28Off Brand%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="String\9093%28Word Flip%29.py">
