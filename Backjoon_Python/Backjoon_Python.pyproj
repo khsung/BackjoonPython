@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DynamicProgramming\1463(Make It 1).py</StartupFile>
+    <StartupFile>Hash\1620(I'm Pokemon Master Idasom).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -135,6 +135,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Hash\16165%28Girl group master Junseok%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hash\1620%28I%27m Pokemon Master Idasom%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Heap\11286%28Absolute Value Heap%29.py">
