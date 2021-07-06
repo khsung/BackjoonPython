@@ -2,8 +2,12 @@
 import sys
 first=list(sys.stdin.readline().split())
 second=list(sys.stdin.readline().split())
-while second[0] in first[0]:
-    first[0]=first[0].replace(second[0],"")
+temp_stack=[]
+for i in first:
+    if i in second:
+        pass
+    else:
+        temp_stack.append(i)
 if len(first[0])==0:
     print("FRULA")
 else:
