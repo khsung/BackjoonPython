@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>String\9935(String Explosion).py</StartupFile>
+    <StartupFile>StackAndQueue\7662(Double Priority Queue).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -195,6 +195,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StackAndQueue\3190%28Snake%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StackAndQueue\7662%28Double Priority Queue%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="String\1259%28Palindrome Number%29.py">
