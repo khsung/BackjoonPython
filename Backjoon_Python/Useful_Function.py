@@ -49,3 +49,7 @@ b=copy.copy(a); b=copy.deepcopy(a)
 #날짜 원하는 형태 출력
 from datetime import datetime
 print(datetime.today().strftime("%Y-%m-%d"))
+
+#데크 사용
+from collections import deque
+deque()     #데크선언
