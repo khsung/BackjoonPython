@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\16953(A To B).py</StartupFile>
+    <StartupFile>StackAndQueue\3425(Go Stack).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -207,6 +207,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StackAndQueue\3190%28Snake%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StackAndQueue\3425%28Go Stack%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StackAndQueue\7662%28Double Priority Queue%29.py">
