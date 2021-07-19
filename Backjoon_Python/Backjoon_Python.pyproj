@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>StackAndQueue\3425(Go Stack).py</StartupFile>
+    <StartupFile>String\1062(Teaching).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -213,6 +213,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StackAndQueue\7662%28Double Priority Queue%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="String\1062%28Teaching%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="String\1259%28Palindrome Number%29.py">
