@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\3055(Escape).py</StartupFile>
+    <StartupFile>Implement\1713(Nominating A Candidate).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -171,6 +171,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Implement\16926%28Array Rotation 1%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Implement\1713%28Nominating A Candidate%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Implement\17389%28Bonus Score%29.py">
