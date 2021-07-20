@@ -1,75 +1,49 @@
 #3055 탈출
-import copy
+import sys
+from collections import deque
 r,c=map(int,input().split())
 graph=[]
-water=[]
-path=[]
+water=deque()
+path=deque()
 dest=False
+res="KAKTUS"
+
+dx=[-1,0,1,0]
+dy=[0,1,0,-1]
 
 #지도 생성
 for i in range(r):
-    temp=list(input())
+    temp=list(sys.stdin.readline())
     for j in range(c):
         if temp[j]=="*":
-            water.append([i,j])
+            water.append([i,j,0])
         elif temp[j]=="S":
             start=[i,j,0]
             path.append(start)
     graph.append(temp)
 
+
 while not dest:
-    temp=[]
-    while len(water)>0:     #물의 이동
-        a,b=water.pop()
-        if a-1>=0:
-            if graph[a-1][b]=='.':
-                graph[a-1][b]='*'
-                temp.append([a-1,b])
-        if a+1<r:
-            if graph[a+1][b]=='.':
-                graph[a+1][b]='*'
-                temp.append([a+1,b])
-        if b-1>=0:
-            if graph[a][b-1]=='.':
-                graph[a][b-1]='*'
-                temp.append([a,b-1])
-        if b+1<c:
-            if graph[a][b+1]=='.':
-                graph[a][b+1]='*'
-                temp.append([a,b+1])
-    water=copy.deepcopy(temp)
-    temp.clear()
-    while len(path)>0:      #고슴도치 이동
-        a,b,cnt=path.pop()
-        tempcnt=0
-        if a-1>=0:
-            if graph[a-1][b]=='.':
-                temp.append([a-1,b,cnt+1])
-            elif graph[a-1][b]=='D':
-                dest=True
-                break
-        if a+1<r:
-            if graph[a+1][b]=='.':
-                temp.append([a+1,b,cnt+1])
-            elif graph[a+1][b]=='D':
-                dest=True
-                break
-        if b-1>=0:
-            if graph[a][b-1]=='.':
-                temp.append([a,b-1,cnt+1])
-            elif graph[a][b-1]=='D':
-                dest=True
-                break
-        if b+1<c:
-            if graph[a][b+1]=='.':
-                temp.append([a,b+1,cnt+1])
-            elif graph[a][b+1]=='D':
-                dest=True
-                break
-    path=copy.deepcopy(temp)
-    if dest==True:      #도착했을 경우
-        print(cnt+1)
+    water_len=len(water)
+    for i in range(water_len):
+        x,y,cnt=water.popleft()
+        for j in range(4):
+            if x+dx[j]>=0 and y+dy[j]>=0 and x+dx[j]<r and y+dy[j]<c and (graph[x+dx[j]][y+dy[j]]=="." or graph[x+dx[j]][y+dy[j]]=="S"):
+                graph[x+dx[j]][y+dy[j]]="*"
+                water.append([x+dx[j],y+dy[j],cnt+1])
+    
+    path_len=len(path)
+    for i in range(path_len):
+        x,y,cnt=path.popleft()
+        graph[x][y]="#"
+        for j in range(4):
+            if x+dx[j]>=0 and y+dy[j]>=0 and x+dx[j]<r and y+dy[j]<c:
+                if graph[x+dx[j]][y+dy[j]]==".":
+                    path.append([x+dx[j],y+dy[j],cnt+1])
+                elif graph[x+dx[j]][y+dy[j]]=="D":
+                    res=cnt+1
+                    dest=True
+                    break
+    if len(path)==0:
         break
-    if len(path)==0 and len(water)==0:      #물과 고슴도치가 이동할 위치가 없을 때
-        print("KAKTUS")
-        break
+print(res)
