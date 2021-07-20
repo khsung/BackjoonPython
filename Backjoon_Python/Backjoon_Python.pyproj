@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Math\1072(Game).py</StartupFile>
+    <StartupFile>TwoPointer\2143(Sum Of Two Arrays).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -463,6 +463,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="TwoPointer\2003%28Sum Of Numbers2%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwoPointer\2143%28Sum Of Two Arrays%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Useful_Function.py" />
