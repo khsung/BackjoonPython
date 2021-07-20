@@ -16,7 +16,7 @@ for i in range(r):
     temp=list(sys.stdin.readline())
     for j in range(c):
         if temp[j]=="*":
-            water.append([i,j,0])
+            water.append([i,j])
         elif temp[j]=="S":
             start=[i,j,0]
             path.append(start)
@@ -26,11 +26,11 @@ for i in range(r):
 while not dest:
     water_len=len(water)
     for i in range(water_len):
-        x,y,cnt=water.popleft()
+        x,y=water.popleft()
         for j in range(4):
             if x+dx[j]>=0 and y+dy[j]>=0 and x+dx[j]<r and y+dy[j]<c and (graph[x+dx[j]][y+dy[j]]=="." or graph[x+dx[j]][y+dy[j]]=="S"):
                 graph[x+dx[j]][y+dy[j]]="*"
-                water.append([x+dx[j],y+dy[j],cnt+1])
+                water.append([x+dx[j],y+dy[j]])
     
     path_len=len(path)
     for i in range(path_len):
