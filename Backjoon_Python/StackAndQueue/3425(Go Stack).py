@@ -29,8 +29,8 @@ def SWP(array):
     else:
         temp1=array.pop()
         temp2=array.pop()
-        array.append(temp2)
-        return array.append(temp1)
+        array.append(temp1)
+        return array.append(temp2)
 
 def ADD(array):
     if len(array)<2:
