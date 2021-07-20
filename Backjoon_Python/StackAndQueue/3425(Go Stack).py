@@ -30,110 +30,116 @@ def SWP(array):
         temp1=array.pop()
         temp2=array.pop()
         array.append(temp2)
-        array.append(temp1)
-        return array
+        return array.append(temp1)
 
 def ADD(array):
-    temp1=array.pop()
-    temp2=array.pop()
-    if abs(temp1+temp2)>10**9:
+    if len(array)<2:
         return "ERROR"
     else:
-        return array.append(temp1+temp2)
+        temp1=array.pop()
+        temp2=array.pop()
+        if abs(temp1+temp2)>10**9:
+            return "ERROR"
+        else:
+            return array.append(temp1+temp2)
 
 def SUB(array):
     if len(array)<2:
         return "ERROR"
     else:
+        temp1=array.pop()
+        temp2=array.pop()
         if abs(temp2-temp1)>10**9:
             return "ERROR"
         else:
-            temp1=array.pop()
-            temp2=array.pop()
             return array.append(temp2-temp1)
 
 def MUL(array):
-    temp1=array.pop()
-    temp2=array.pop()
-    if abs(temp1*temp2)>10**9:
+    if len(array)<2:
         return "ERROR"
     else:
-        return array.append(temp2*temp1)
+        temp1=array.pop()
+        temp2=array.pop()
+        if abs(temp2*temp1)>10**9:
+            return "ERROR"
+        else:
+            return array.append(temp2*temp1)
 
 def DIV(array):
     if len(array)<2:
         return "ERROR"
     else:
-        op=1
         temp1=array.pop()
         temp2=array.pop()
+        op=1
         if temp1==0:
             return "ERROR"
         else:
             if temp1<0:
+                temp1=temp1*(-1)
                 op=op*(-1)
             if temp2<0:
                 op=op*(-1)
-            return array.append((abs(temp2)//abs(temp1))*op)
+                temp2=temp2*(-1)
+            return array.append((temp2//temp1)*op)
 
 def MOD(array):
     if len(array)<2:
         return "ERROR"
     else:
-        op=1
         temp1=array.pop()
         temp2=array.pop()
+        op=1
         if temp1==0:
             return "ERROR"
         else:
             if temp2<0:
                 op=op*(-1)
-            return array.append((abs(temp2)%abs(temp1))*op)
+                temp2=temp2*(-1)
+            return array.append((temp2%abs(temp1))*op)
 
-com="start"
-res="start"
-command_stack=[]
-while com!="QUIT":
-    com=input()
-    if com=="END":
-        num=int(input())
-        for i in range(num):
-            stack=[int(input())]
-            for j in range(len(command_stack)):
-                res="start"
-                if len(command_stack[j].split())>1:
-                    temp=command_stack[j].split()
-                    NUM_X(stack,int(temp[1]))
-                else:
-                    if command_stack[j]=="POP":
-                        res=POP(stack)
-                    elif command_stack[j]=="INV":
-                        res=INV(stack)
-                    elif command_stack[j]=="DUP":
-                        res=DUP(stack)
-                    elif command_stack[j]=="SWP":
-                        res=SWP(stack)
-                    elif command_stack[j]=="ADD":
-                        res=ADD(stack)
-                    elif command_stack[j]=="SUB":
-                        res=SUB(stack)
-                    elif command_stack[j]=="MUL":
-                        res=MUL(stack)
-                    elif command_stack[j]=="DIV":
-                        res=DIV(stack)
-                    elif command_stack[j]=="MOD":
-                        res=MOD(stack)
-                if res=="ERROR":
-                    print(res)
-                    break
-            if res!="ERROR":
-                if len(stack)==1:
-                    print(stack[0])
-                else:
-                    print("ERROR")
-        command_stack.clear()
-        print()
-    elif com=="QUIT":
+command="START"
+command_array=[]
+while command!="QUIT":
+    command=input()
+    if command=="QUIT":
         pass
+    elif command=="END":
+        n=int(input())
+        for i in range(n):
+            res="START"
+            stack=[int(input())]
+            for j in range(len(command_array)):
+                if len(command_array[j].split())==2:
+                    temp=command_array[j].split()
+                    res=NUM_X(stack,int(temp[1]))
+                elif command_array[j]=="POP":
+                    res=POP(stack)
+                elif command_array[j]=="INV":
+                    res=INV(stack)
+                elif command_array[j]=="DUP":
+                    res=DUP(stack)
+                elif command_array[j]=="SWP":
+                    res=SWP(stack)
+                elif command_array[j]=="ADD":
+                    res=ADD(stack)
+                elif command_array[j]=="SUB":
+                    res=SUB(stack)
+                elif command_array[j]=="MUL":
+                    res=MUL(stack)
+                elif command_array[j]=="DIV":
+                    res=DIV(stack)
+                else:
+                    res=MOD(stack)
+                if res=="ERROR":
+                    break
+            if res=="ERROR" or len(stack)!=1:
+                print("ERROR")
+            else:
+                print(stack[0])
+        input()
+        print()
+        command=="START"
+        command_array.clear()
     else:
-        command_stack.append(com)
+        command_array.append(command)
