@@ -76,15 +76,27 @@
 #window.mainloop()
 
 
-#1837 암호제작
-p,k=map(int,input().split())
-check=False
-for i in range(2,k):
-    if p%i==0:
-        res=i
-        check=True
-        break
-if check:
-    print("BAD",res)
+#10610 30
+n=input()
+sum=0
+cnt=0
+array=[]
+res=""
+if "0" not in n:
+    print(-1)
 else:
-    print("GOOD")
+    for i in range(len(n)):
+        if n[i]=="0":
+            cnt+=1
+        else:
+            array.append(n[i])
+        sum+=int(n[i])
+    if sum%3==0:
+        array.sort(reverse=True)
+        for i in range(len(array)):
+            res+=array[i]
+        for i in range(cnt):
+            res+="0"
+        print(int(res))
+    else:
+        print(-1)

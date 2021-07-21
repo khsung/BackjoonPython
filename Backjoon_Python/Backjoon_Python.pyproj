@@ -236,6 +236,9 @@
     <Compile Include="StackAndQueue\7662%28Double Priority Queue%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="String\10610%2830%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="String\1062%28Teaching%29.py">
       <SubType>Code</SubType>
     </Compile>
