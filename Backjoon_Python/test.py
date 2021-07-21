@@ -74,42 +74,17 @@
 #filemenu.add_separator()
 #filemenu.add_command(label="종료",command=func_exit)
 #window.mainloop()
-places=[["POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"], ["POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP"], ["PXOPX", "OXOXP", "OXPXX", "OXXXP", "POOXX"], ["OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"], ["PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"]]
-answer = []
-for i in range(len(places)):
-    p_location=[]
-    check=1
-    for j in range(len(places[i])):
-        if 'P' in places[i][j]:
-            for k in range(5):
-                if places[i][j][k]=='P':
-                    p_location.append([j,k])
-    print(p_location)
-    for k in range(len(p_location)-1):
-        for j in range(k+1,len(p_location)-1):
-            if abs(p_location[k][0]-p_location[j][0])+abs(p_location[k][1]-p_location[j][1])<=2:
-                if p_location[k][0]==p_location[j][0]:
-                    if abs(p_location[k][1]-p_location[j][1])==1:
-                        check=0
-                        #break
-                    else:
-                        if places[i][p_location[k][0]][(p_location[k][1]+p_location[j][1])//2]=="O":
-                            check=0
-                            #break
-                elif p_location[k][1]==p_location[j][1]:
-                    if abs(p_location[k][0]-p_location[j][0])==1:
-                        check=0
-                        #break
-                    else:
-                        print("k =",k)
-                        print((p_location[k][0]+p_location[j][0])//2)
-                        print(p_location[k][1])
-                        if places[k][(p_location[k][0]+p_location[j][0])//2][p_location[k][1]]=="O":
-                            check=0
-                            #break
-                else:
-                    if places[i][p_location[k][0]][p_location[j][1]]=="O" and places[i][p_location[j][0]][p_location[k][1]]=="O":
-                        check=0
-                        #break
-    answer.append(check)    
-print(answer)
+
+
+#1837 암호제작
+p,k=map(int,input().split())
+check=False
+for i in range(2,k):
+    if p%i==0:
+        res=i
+        check=True
+        break
+if check:
+    print("BAD",res)
+else:
+    print("GOOD")
