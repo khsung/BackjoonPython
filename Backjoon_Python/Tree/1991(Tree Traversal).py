@@ -1,35 +1,34 @@
 #1991 트리 순회
-def preorder(tree,root):
+def preorder(trees,root):
     print(root,end="")
-    if tree[root][0]!=".":
-        preorder(tree,tree[root][0])
-    if tree[root][1]!=".":
-        preorder(tree,tree[root][1])
-    
-def inorder(tree,root):
-    if tree[root][0]!=".":
-        inorder(tree,tree[root][0])
-    print(root,end="")
-    if tree[root][1]!=".":
-        inorder(tree,tree[root][1])
+    if trees[root][0]!=".":
+        preorder(trees,trees[root][0])
+    if trees[root][1]!=".":
+        preorder(trees,trees[root][1])
 
-def postorder(tree,root):
-    if tree[root][0]!=".":
-        postorder(tree,tree[root][0])
-    if tree[root][1]!=".":
-        postorder(tree,tree[root][1])
+def inorder(trees,root):
+    if trees[root][0]!=".":
+        inorder(trees,trees[root][0])
+    print(root,end="")
+    if trees[root][1]!=".":
+        inorder(trees,trees[root][1])
+
+def postorder(trees,root):
+    if trees[root][0]!=".":
+        postorder(trees,trees[root][0])
+    if trees[root][1]!=".":
+        postorder(trees,trees[root][1])
     print(root,end="")
 
 n=int(input())
-tree={}
+trees={}
+root="A"
 for i in range(n):
-    root,left,right=input().split()
-    tree[root]=[left,right]
-    if i==0:
-        saveroot=root
+    temp=input().split()
+    trees[temp[0]]=[temp[1],temp[2]]
 
-preorder(tree,saveroot)
+preorder(trees,root)
 print()
-inorder(tree,saveroot)
+inorder(trees,root)
 print()
-postorder(tree,saveroot)
+postorder(trees,root)
