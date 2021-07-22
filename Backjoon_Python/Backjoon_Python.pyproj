@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>test.py</StartupFile>
+    <StartupFile>String\4358(Ecology).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -254,6 +254,9 @@
     <Compile Include="String\1764%28Off Brand%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="String\4358%28Ecology%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="String\9093%28Word Flip%29.py">
       <SubType>Code</SubType>
     </Compile>
@@ -466,6 +469,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tree\2042%28Finding The Sum Of Intervals%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tree\5639%28Binary Search Tree%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="TwoPointer\1806%28Subtotal%29.py">

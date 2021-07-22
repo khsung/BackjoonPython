@@ -77,7 +77,7 @@
 
 
 
-#1927 최소 힙 연습
+#1927 최대 힙 연습
 import sys
 def push_num(num):
     global heaps
@@ -85,7 +85,7 @@ def push_num(num):
     if len(heaps)>2:
         cur_index=len(heaps)-1
         while cur_index!=1:
-            if heaps[cur_index]<heaps[cur_index//2]:
+            if heaps[cur_index]>heaps[cur_index//2]:
                 heaps[cur_index],heaps[cur_index//2]=heaps[cur_index//2],heaps[cur_index]
                 cur_index=cur_index//2
             else:
@@ -106,21 +106,21 @@ def pop_num():
                 break
             #왼쪽자식만 있을 때
             elif len(heaps)<=cur_index*2+1:
-                if heaps[cur_index]>heaps[cur_index*2]:
+                if heaps[cur_index]<heaps[cur_index*2]:
                     heaps[cur_index],heaps[cur_index*2]=heaps[cur_index*2],heaps[cur_index]
                 else:
                     break
             else:
-                if heaps[cur_index]<=heaps[2*cur_index] and heaps[cur_index]<=heaps[2*cur_index+1]:
+                if heaps[cur_index]>=heaps[2*cur_index] and heaps[cur_index]>=heaps[2*cur_index+1]:
                     break
-                elif heaps[cur_index]>heaps[2*cur_index] and heaps[cur_index]<=heaps[2*cur_index+1]:
+                elif heaps[cur_index]<heaps[2*cur_index] and heaps[cur_index]>=heaps[2*cur_index+1]:
                     heaps[cur_index],heaps[cur_index*2]=heaps[cur_index*2],heaps[cur_index]
                     cur_index=cur_index*2
-                elif heaps[cur_index]<=heaps[2*cur_index] and heaps[cur_index]>heaps[2*cur_index+1]:
+                elif heaps[cur_index]>=heaps[2*cur_index] and heaps[cur_index]<heaps[2*cur_index+1]:
                     heaps[cur_index],heaps[cur_index*2+1]=heaps[cur_index*2+1],heaps[cur_index]
                     cur_index=cur_index*2+1
                 else:
-                    if heaps[2*cur_index]<heaps[2*cur_index+1]:
+                    if heaps[2*cur_index]>heaps[2*cur_index+1]:
                         heaps[cur_index],heaps[cur_index*2]=heaps[cur_index*2],heaps[cur_index]
                         cur_index=cur_index*2
                     else:
