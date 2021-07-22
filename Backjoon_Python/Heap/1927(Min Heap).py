@@ -16,52 +16,59 @@
 
 #연습
 import sys
-heap=[0]
-n=int(input())
-for i in range(n):
-    temp=int(sys.stdin.readline())
-    if temp==0:
-        if len(heap)==1:
-            print(0)
-        else:
-            print(heap[1])
-            heap[1]=heap[len(heap)-1]
-            heap.pop()
-            curr_index=1
-            while True:
-                left=curr_index*2
-                right=left+1
-                if left>=len(heap):
-                    break
-                elif right>=len(heap):
-                    if heap[curr_index]>heap[left]:
-                        heap[curr_index],heap[left]=heap[left],heap[curr_index]
-                        curr_index=left
-                    else:
-                        break
-                else:
-                    if heap[left]>=heap[curr_index] and heap[right]>=heap[curr_index]:
-                        break
-                    elif heap[left]<heap[curr_index] and heap[right]>heap[curr_index]:
-                        heap[curr_index],heap[left]=heap[left],heap[curr_index]
-                        curr_index=right
-                    elif heap[right]<heap[curr_index] and heap[left]>heap[curr_index]:
-                        heap[curr_index],heap[right]=heap[right],heap[curr_index]
-                        curr_index=left
-                    else:
-                        if heap[right]>heap[left]:
-                            heap[curr_index],heap[left]=heap[left],heap[curr_index]
-                            curr_index=left
-                        else:
-                            heap[curr_index],heap[right]=heap[right],heap[curr_index]
-                            curr_index=right
-    else:
-        heap.append(temp)
-        curr_index=len(heap)-1
-        while curr_index!=1:
-            if heap[curr_index]<heap[curr_index//2]:
-                heap[curr_index],heap[curr_index//2]=heap[curr_index//2],heap[curr_index]
-                curr_index=curr_index//2
+def push_num(num):
+    global heaps
+    heaps.append(num)
+    if len(heaps)>2:
+        cur_index=len(heaps)-1
+        while cur_index!=1:
+            if heaps[cur_index]<heaps[cur_index//2]:
+                heaps[cur_index],heaps[cur_index//2]=heaps[cur_index//2],heaps[cur_index]
+                cur_index=cur_index//2
             else:
                 break
-    print(heap)
+
+def pop_num():
+    global heaps
+    if len(heaps)==1:
+        print(0)
+    else:
+        print(heaps[1])
+        heaps[1]=heaps[len(heaps)-1]
+        heaps.pop()
+        cur_index=1
+        while True:
+            #자식이 없을 때
+            if len(heaps)<=cur_index*2:
+                break
+            #왼쪽자식만 있을 때
+            elif len(heaps)<=cur_index*2+1:
+                if heaps[cur_index]>heaps[cur_index*2]:
+                    heaps[cur_index],heaps[cur_index*2]=heaps[cur_index*2],heaps[cur_index]
+                else:
+                    break
+            else:
+                if heaps[cur_index]<=heaps[2*cur_index] and heaps[cur_index]<=heaps[2*cur_index+1]:
+                    break
+                elif heaps[cur_index]>heaps[2*cur_index] and heaps[cur_index]<=heaps[2*cur_index+1]:
+                    heaps[cur_index],heaps[cur_index*2]=heaps[cur_index*2],heaps[cur_index]
+                    cur_index=cur_index*2
+                elif heaps[cur_index]<=heaps[2*cur_index] and heaps[cur_index]>heaps[2*cur_index+1]:
+                    heaps[cur_index],heaps[cur_index*2+1]=heaps[cur_index*2+1],heaps[cur_index]
+                    cur_index=cur_index*2+1
+                else:
+                    if heaps[2*cur_index]<heaps[2*cur_index+1]:
+                        heaps[cur_index],heaps[cur_index*2]=heaps[cur_index*2],heaps[cur_index]
+                        cur_index=cur_index*2
+                    else:
+                        heaps[cur_index],heaps[cur_index*2+1]=heaps[cur_index*2+1],heaps[cur_index]
+                        cur_index=cur_index*2+1
+
+n=int(input())
+heaps=[0]
+for i in range(n):
+    temp=int(sys.stdin.readline())
+    if temp!=0:
+        push_num(temp)
+    else:
+        pop_num()

@@ -77,59 +77,61 @@
 
 
 
-#2042 구간 합 구하기 연습
+#1927 최소 힙 연습
 import sys
+def push_num(num):
+    global heaps
+    heaps.append(num)
+    if len(heaps)>2:
+        cur_index=len(heaps)-1
+        while cur_index!=1:
+            if heaps[cur_index]<heaps[cur_index//2]:
+                heaps[cur_index],heaps[cur_index//2]=heaps[cur_index//2],heaps[cur_index]
+                cur_index=cur_index//2
+            else:
+                break
 
-def init(left,right,index):
-    global origin,segment
-    if left==right:
-        segment[index]=origin[left-1]
-        return segment[index]
+def pop_num():
+    global heaps
+    if len(heaps)==1:
+        print(0)
     else:
-        mid=(left+right)//2
-        segment[index]=init(left,mid,2*index)+init(mid+1,right,2*index+1)
-        return segment[index]
+        print(heaps[1])
+        heaps[1]=heaps[len(heaps)-1]
+        heaps.pop()
+        cur_index=1
+        while True:
+            #자식이 없을 때
+            if len(heaps)<=cur_index*2:
+                break
+            #왼쪽자식만 있을 때
+            elif len(heaps)<=cur_index*2+1:
+                if heaps[cur_index]>heaps[cur_index*2]:
+                    heaps[cur_index],heaps[cur_index*2]=heaps[cur_index*2],heaps[cur_index]
+                else:
+                    break
+            else:
+                if heaps[cur_index]<=heaps[2*cur_index] and heaps[cur_index]<=heaps[2*cur_index+1]:
+                    break
+                elif heaps[cur_index]>heaps[2*cur_index] and heaps[cur_index]<=heaps[2*cur_index+1]:
+                    heaps[cur_index],heaps[cur_index*2]=heaps[cur_index*2],heaps[cur_index]
+                    cur_index=cur_index*2
+                elif heaps[cur_index]<=heaps[2*cur_index] and heaps[cur_index]>heaps[2*cur_index+1]:
+                    heaps[cur_index],heaps[cur_index*2+1]=heaps[cur_index*2+1],heaps[cur_index]
+                    cur_index=cur_index*2+1
+                else:
+                    if heaps[2*cur_index]<heaps[2*cur_index+1]:
+                        heaps[cur_index],heaps[cur_index*2]=heaps[cur_index*2],heaps[cur_index]
+                        cur_index=cur_index*2
+                    else:
+                        heaps[cur_index],heaps[cur_index*2+1]=heaps[cur_index*2+1],heaps[cur_index]
+                        cur_index=cur_index*2+1
 
-def update(left,right,target,index,diff):
-    global segment
-    segment[index]+=diff
-    if left==target and right==target:
-        pass
-    else:
-        mid=(left+right)//2
-        if mid>=target:
-            return update(left,mid,target,2*index,diff)
-        else:
-            return update(mid+1,right,target,2*index+1,diff)
-
-def findsum(left,right,start,end,index):
-    global segment
-    if left==start and right==end:
-        return segment[index]
-    else:
-        mid=(left+right)//2
-        if mid>=end:
-            return findsum(left,mid,start,end,2*index)
-        elif mid<start:
-            return findsum(mid+1,right,start,end,2*index+1)
-        else:
-            temp_sum=findsum(left,mid,start,mid,2*index)+findsum(mid+1,right,mid+1,end,2*index+1)
-            return temp_sum
-
-n,m,k=map(int,sys.stdin.readline().split())
-origin=[]
-segment=[0 for i in range(4*n)]
-left=1
-right=n
-init_index=1
+n=int(input())
+heaps=[0]
 for i in range(n):
-    origin.append(int(sys.stdin.readline()))
-init(left,right,init_index)
-for i in range(m+k):
-    command=list(map(int,sys.stdin.readline().split()))
-    if command[0]==1:
-        diff=command[2]-origin[command[1]-1]
-        origin[command[1]-1]=command[2]
-        update(left,right,command[1],init_index,diff)
+    temp=int(sys.stdin.readline())
+    if temp!=0:
+        push_num(temp)
     else:
-        print(findsum(left,right,command[1],command[2],init_index))
+        pop_num()
