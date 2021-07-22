@@ -55,51 +55,58 @@
 
 #연습
 
-def initsegment(origin_numbers,segment_tree,curr_index,left,right):
+import sys
+
+def init(left,right,index):
+    global origin,segment
     if left==right:
-        segment_tree[curr_index]=origin_numbers[left-1]
-        return segment_tree[curr_index]
+        segment[index]=origin[left-1]
+        return segment[index]
     else:
         mid=(left+right)//2
-        segment_tree[curr_index]=initsegment(origin_numbers,segment_tree,2*curr_index,left,mid)+initsegment(origin_numbers,segment_tree,2*curr_index+1,mid+1,right)
-        return segment_tree[curr_index]
+        segment[index]=init(left,mid,2*index)+init(mid+1,right,2*index+1)
+        return segment[index]
 
-def update(segment_tree,curr_index,left,right,target_index,diff):
-    mid=(left+right)//2
-    segment_tree[curr_index]+=diff
-    if left==right:
-        return
-    if mid>=target_index:
-        return update(segment_tree,2*curr_index,left,mid,target_index,diff)
+def update(left,right,target,index,diff):
+    global segment
+    segment[index]+=diff
+    if left==target and right==target:
+        pass
     else:
-        return update(segment_tree,2*curr_index+1,mid+1,right,target_index,diff)
+        mid=(left+right)//2
+        if mid>=target:
+            return update(left,mid,target,2*index,diff)
+        else:
+            return update(mid+1,right,target,2*index+1,diff)
 
-
-def findsum(segment_tree,curr_index,left,right,start,end):
-    mid=(left+right)//2
+def findsum(left,right,start,end,index):
+    global segment
     if left==start and right==end:
-        return segment_tree[curr_index]
-    elif mid>=end:
-        return findsum(segment_tree,2*curr_index,left,mid,start,end)
-    elif mid<start:
-        return findsum(segment_tree,2*curr_index+1,mid+1,right,start,end)
+        return segment[index]
     else:
-        tempsum=findsum(segment_tree,2*curr_index,left,mid,start,mid)+findsum(segment_tree,2*curr_index+1,mid+1,right,mid+1,end)
-        return tempsum
-n,m,k=map(int,input().split())
-origin_numbers=[]
-start=1
-end=n
-segment_tree=[0 for i in range(4*n)]
-for i in range(n):
-    origin_numbers.append(int(input()))
+        mid=(left+right)//2
+        if mid>=end:
+            return findsum(left,mid,start,end,2*index)
+        elif mid<start:
+            return findsum(mid+1,right,start,end,2*index+1)
+        else:
+            temp_sum=findsum(left,mid,start,mid,2*index)+findsum(mid+1,right,mid+1,end,2*index+1)
+            return temp_sum
 
-initsegment(origin_numbers,segment_tree,1,start,end)
-print(segment_tree)
+n,m,k=map(int,sys.stdin.readline().split())
+origin=[]
+segment=[0 for i in range(4*n)]
+left=1
+right=n
+init_index=1
+for i in range(n):
+    origin.append(int(sys.stdin.readline()))
+init(left,right,init_index)
 for i in range(m+k):
-    op=list(map(int,input().split()))
-    if op[0]==1:
-        update(segment_tree,1,start,end,op[1],op[2]-origin_numbers[op[1]-1])
+    command=list(map(int,sys.stdin.readline().split()))
+    if command[0]==1:
+        diff=command[2]-origin[command[1]-1]
+        origin[command[1]-1]=command[2]
+        update(left,right,command[1],init_index,diff)
     else:
-        print(findsum(segment_tree,1,start,end,op[1],op[2]))
-    print(segment_tree)
+        print(findsum(left,right,command[1],command[2],init_index))
