@@ -30,4 +30,7 @@ while len(queue)>0:
                     queue.append([x+dx[i]*int(graph[x][y]),y+dy[i]*int(graph[x][y]),cnt+1])
     if check:
         break
-print(res)
+if res==0:
+    print(-1)
+else:
+    print(res)
