@@ -1,49 +1,46 @@
 #3055 탈출
-import sys
-from collections import deque
 r,c=map(int,input().split())
-graph=[]
-water=deque()
-path=deque()
-dest=False
-res="KAKTUS"
-
+visited=[[0 for i in range(c)]for j in range(r)]
 dx=[-1,0,1,0]
 dy=[0,1,0,-1]
-
-#지도 생성
+graph=[]
+path=[]
+check=False
+res=0
 for i in range(r):
-    temp=list(sys.stdin.readline())
+    temp=list(input())
     for j in range(c):
-        if temp[j]=="*":
-            water.append([i,j])
-        elif temp[j]=="S":
+        if temp[j]=='S':
             start=[i,j,0]
-            path.append(start)
+            visited[i][j]=1
+            temp[j]='.'
+        elif temp[j]=='*':
+            path.append([i,j])
     graph.append(temp)
 
-
-while not dest:
-    water_len=len(water)
-    for i in range(water_len):
-        x,y=water.popleft()
-        for j in range(4):
-            if x+dx[j]>=0 and y+dy[j]>=0 and x+dx[j]<r and y+dy[j]<c and (graph[x+dx[j]][y+dy[j]]=="." or graph[x+dx[j]][y+dy[j]]=="S"):
-                graph[x+dx[j]][y+dy[j]]="*"
-                water.append([x+dx[j],y+dy[j]])
-    
-    path_len=len(path)
-    for i in range(path_len):
-        x,y,cnt=path.popleft()
-        graph[x][y]="#"
-        for j in range(4):
-            if x+dx[j]>=0 and y+dy[j]>=0 and x+dx[j]<r and y+dy[j]<c:
-                if graph[x+dx[j]][y+dy[j]]==".":
-                    path.append([x+dx[j],y+dy[j],cnt+1])
-                elif graph[x+dx[j]][y+dy[j]]=="D":
-                    res=cnt+1
-                    dest=True
-                    break
-    if len(path)==0:
+path.append(start)
+while len(path)>0:
+    temp=path.pop(0)
+    for i in range(4):
+        x=temp[0]+dx[i]
+        y=temp[1]+dy[i]
+        if x>=0 and y>=0 and x<r and y<c:
+            if len(temp)==2:
+                if graph[x][y]=='.':
+                    graph[x][y]='*'
+                    path.append([x,y])
+            else:
+                if visited[x][y]==0:
+                    if graph[x][y]=='.':
+                        path.append([x,y,temp[2]+1])
+                        visited[x][y]=1
+                    elif graph[x][y]=='D':
+                        check=True
+                        res=temp[2]+1
+    if check:
         break
-print(res)
+
+if check:
+    print(res)
+else:
+    print("KAKTUS")
