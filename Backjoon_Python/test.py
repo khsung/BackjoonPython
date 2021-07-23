@@ -77,12 +77,16 @@
 
 
 
-#11653 소인수분해 연습
-n=int(input())
-cnt=2
-while n>1:
-    if n%cnt==0:
-        print(cnt)
-        n=n//cnt
-    else:
-        cnt+=1
+#1010 다리놓기 연습
+test_case=int(input())
+for i in range(test_case):
+    n,m=map(int,input().split())
+    res=1
+    for j in range(n):
+        res*=m
+        m-=1
+    tempn=n
+    for j in range(n):
+        res=res//tempn
+        tempn-=1
+    print(res)
