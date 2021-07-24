@@ -1,17 +1,24 @@
 #1654 랜선 자르기
 k,n=map(int,input().split())
+left=1
+right=0
 cable=[]
+res=0
 for i in range(k):
-    cable.append(int(input()))
-cable.sort()
-stand=cable[0]
-for i in range(stand,0,-1):
-    if k*(cable[len(cable)-1]//i)<n:
-        pass
+    temp=int(input())
+    if temp>right:
+        right=temp
+    cable.append(temp)
+
+while left<=right:
+    cnt=0
+    mid=(left+right)//2
+    for i in cable:
+        cnt+=(i//mid)
+    if cnt>=n:
+        left=mid+1
+        if mid>res:
+            res=mid
     else:
-        cnt=0
-        for j in cable:
-            cnt=cnt+(j//i)
-        if cnt==n:
-            print(i)
-            break
+        right=mid-1
+print(res)
