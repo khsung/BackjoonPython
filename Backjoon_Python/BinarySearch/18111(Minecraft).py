@@ -4,7 +4,7 @@ n,m,b=map(int,input().split())
 graph=[]
 left=0
 right=0
-res_time=1000000
+res_time=100000000000
 res_height=0
 for i in range(n):
     temp=list(map(int,sys.stdin.readline().split()))
