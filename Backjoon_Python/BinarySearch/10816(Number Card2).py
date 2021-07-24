@@ -5,30 +5,16 @@ first_array=list(map(int,sys.stdin.readline().split()))
 first_array.sort()
 m=int(input())
 second_array=list(map(int,sys.stdin.readline().split()))
-for i in range(m):
+for i in second_array:
     left=0
     right=n-1
     cnt=0
-    check=True
-    while left<=right and check==True:
+    while left<=right:
         mid=(left+right)//2
-        if first_array[mid]==second_array[i]:
-            temp_dis=0
-            while True:
-                if mid>=0 and first_array[mid]==second_array[i]:
-                    mid-=1
-                    temp_dis+=1
-                else:
-                    temp_dis-=1
-                    mid+=1
-                    break
-            mid+=temp_dis
-            cnt+=temp_dis
-            while mid<n and first_array[mid]==second_array[i]:
-                cnt+=1
-                mid+=1
-            check=False
-        elif first_array[mid]<second_array[i]:
+        if first_array[mid]==i:
+            cnt=first_array[left:right+1].count(i)
+            break
+        elif first_array[mid]<i:
             left=mid+1
         else:
             right=mid-1
