@@ -1,5 +1,5 @@
 # Backjoon_Python
-백준 알고리즘 파이썬 코드
+백준 알고리즘 Python 코드
 
 백준 사이트에 있는 알고리즘 문제를 직접 풀어본 코드를 기록하는 Repository입니다.
 
