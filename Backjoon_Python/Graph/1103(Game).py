@@ -4,33 +4,36 @@ res=0
 n,m=map(int,input().split())
 graph=[]
 visited=[[0 for i in range(m)]for j in range(n)]
+visited[0][0]=1
+check=False
+res=1
 
 #위, 오른쪽, 아래, 왼쪽
 dx=[-1,0,1,0]
 dy=[0,1,0,-1]
 queue=deque()
-for i in range(n):
-    temp=list(input())
-    graph.append(temp)
 queue.append([0,0,1])
+
+for i in range(n):
+    graph.append(list(input()))
+
 while len(queue)>0:
-    x,y,cnt=queue.popleft()
-    visited[x][y]=1
-    if res<cnt:
-        res=cnt
-    check=False
+    temp=queue.popleft()
+    visited[temp[0]][temp[1]]=1
     for i in range(4):
-        if x+dx[i]*int(graph[x][y])>=0 and y+dy[i]*int(graph[x][y])>=0 and x+dx[i]*int(graph[x][y])<n and y+dy[i]*int(graph[x][y])<m:
-            if graph[x+dx[i]*int(graph[x][y])][y+dy[i]*int(graph[x][y])]!="H":
-                if visited[x+dx[i]*int(graph[x][y])][y+dy[i]*int(graph[x][y])]==1:
-                    res=-1
-                    check=True
-                    break
-                else:
-                    queue.append([x+dx[i]*int(graph[x][y]),y+dy[i]*int(graph[x][y]),cnt+1])
+        x=temp[0]+int(graph[temp[0]][temp[1]])*dx[i]
+        y=temp[1]+int(graph[temp[0]][temp[1]])*dy[i]
+        if x>=0 and y>=0 and x<n and y<m:
+            if graph[x][y]=="H":
+                break
+            elif visited[x][y]==1:
+                res=-1
+                check=True
+                break
+            else:
+                if res<temp[2]+1:
+                    res=temp[2]+1
+                queue.append([x,y,temp[2]+1])
     if check:
         break
-if res==0:
-    print(-1)
-else:
-    print(res)
+print(res)
