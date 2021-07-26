@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\2252(Line Up).py</StartupFile>
+    <StartupFile>Tree\11438(LCA2).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -279,6 +279,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tree\11438%28LCA2%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tree\11659%28Sum Of Intervals 4%29.py">
