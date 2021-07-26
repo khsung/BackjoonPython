@@ -114,6 +114,9 @@
     <Compile Include="Graph\1697%28Hide And Seek%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Graph\2252%28Line Up%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Graph\3055%28Escape%29.py">
       <SubType>Code</SubType>
     </Compile>
