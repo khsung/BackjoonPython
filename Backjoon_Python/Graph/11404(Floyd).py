@@ -1,6 +1,7 @@
 #11404 플로이드
 n=int(input())
-graph=[[100001 for i in range(n)]for j in range(n)]
+INF=float('inf')
+graph=[[INF for i in range(n)]for j in range(n)]
 m=int(input())
 for i in range(m):
     a,b,c=map(int,input().split())
@@ -25,5 +26,8 @@ for i in range(n):
 
 for i in range(len(graph)):
     for j in range(len(graph)):
-        print(graph[i][j],end=" ")
+        if graph[i][j]==INF:
+            print(0,end=" ")
+        else:
+            print(graph[i][j],end=" ")
     print()
