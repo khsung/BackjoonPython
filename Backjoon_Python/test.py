@@ -77,19 +77,19 @@
 
 
 
-#1932 정수 삼각형 연습
-n=int(input())
-tri=[]
+#11659 구간 합 구하기 4 연습
+import sys
+n,m=map(int,input().split())
+dp=[]
 for i in range(n):
-    temp=list(map(int,input().split()))
-    tri.append(temp)
-
-for i in range(1,n):
-    for j in range(len(tri[i])):
-        if j==0:
-            tri[i][j]+=tri[i-1][j]
-        elif j==len(tri[i])-1:
-            tri[i][j]+=tri[i-1][j-1]
-        else:
-            tri[i][j]+=max(tri[i-1][j],tri[i-1][j-1])
-print(max(tri[n-1]))
+    temp=list(map(int,sys.stdin.readline().split()))
+    temp1=[0 for i in range(n+1)]
+    for j in range(1,n+1):
+        temp1[j]=temp1[j-1]+temp[j-1]
+    dp.append(temp1)
+for i in range(m):
+    x1,y1,x2,y2=map(int,sys.stdin.readline().split())
+    temp_sum=0
+    for j in range(x1-1,x2):
+        temp_sum+=(dp[j][y2]-dp[j][y1-1])
+    print(temp_sum)
