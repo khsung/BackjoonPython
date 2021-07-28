@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DynamicProgramming\11062(Card Game).py</StartupFile>
+    <StartupFile>Graph\11657(Time Machine).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -100,6 +100,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\1103%28Game%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graph\11657%28Time Machine%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\11724%28Number Of Connecting Elements%29.py">
