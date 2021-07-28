@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DynamicProgramming\12738(Longest Increasing Subsequence 3).py</StartupFile>
+    <StartupFile>DynamicProgramming\1915(Largest Square).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -79,6 +79,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\1463%28Make It 1%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\1915%28Largest Square%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\2747%28Fibonacci Number%29.py">
