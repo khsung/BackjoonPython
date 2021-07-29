@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DynamicProgramming\2579(Climbing Stairs).py</StartupFile>
+    <StartupFile>BitMask\11723(Set).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -194,7 +194,7 @@
     <Compile Include="Heap\11286%28Absolute Value Heap%29.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Implement\11723%28Set%29.py">
+    <Compile Include="BitMask\11723%28Set%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Implement\16675%28Two Hands%29.py">
@@ -540,6 +540,7 @@
     <Folder Include="Contest\" />
     <Folder Include="Implement\" />
     <Folder Include="Hash\" />
+    <Folder Include="BitMask\" />
     <Folder Include="Tree\" />
     <Folder Include="TwoPointer\" />
     <Folder Include="NumberTheory\" />
