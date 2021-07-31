@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tree\5639(Binary Search Tree).py</StartupFile>
+    <StartupFile>DynamicProgramming\9095(1_2_3_Plus).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -100,6 +100,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\5582%28Common Substring%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\9095%281_2_3_Plus%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Function\10699%28Today%29.py">
