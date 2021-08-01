@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\16928(Snake And Ladder Game).py</StartupFile>
+    <StartupFile>String\5525(IOIOI).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -309,6 +309,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="String\4358%28Ecology%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="String\5525%28IOIOI%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="String\9093%28Word Flip%29.py">
