@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NumberTheory\6064(Kaying Calendar).py</StartupFile>
+    <StartupFile>Graph\16928(Snake And Ladder Game).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -133,6 +133,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\1516%28Game Development%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graph\16928%28Snake And Ladder Game%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\16953%28A To B%29.py">
