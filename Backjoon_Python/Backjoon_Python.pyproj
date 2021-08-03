@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Backtracking\15654(N and M(5)).py</StartupFile>
+    <StartupFile>Graph\12851(Hide And Seek2).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -267,6 +267,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Sort\18870%28Coordinate Pressure%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sort\20920%28Memorizing English Words Is Painful%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StackAndQueue\10845%28Queue%29.py">

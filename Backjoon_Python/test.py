@@ -77,19 +77,6 @@
 
 
 
-#11659 구간 합 구하기 4 연습
-import sys
-n,m=map(int,input().split())
-dp=[]
-for i in range(n):
-    temp=list(map(int,sys.stdin.readline().split()))
-    temp1=[0 for i in range(n+1)]
-    for j in range(1,n+1):
-        temp1[j]=temp1[j-1]+temp[j-1]
-    dp.append(temp1)
-for i in range(m):
-    x1,y1,x2,y2=map(int,sys.stdin.readline().split())
-    temp_sum=0
-    for j in range(x1-1,x2):
-        temp_sum+=(dp[j][y2]-dp[j][y1-1])
-    print(temp_sum)
+a=2**33
+print(a)
+print(bin(a))
