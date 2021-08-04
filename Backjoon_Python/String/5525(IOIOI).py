@@ -1,11 +1,20 @@
 #5525 IOIOI
 import sys
 n=int(input())
-p_n="IO"*n+"I"
 m=int(input())
+p_list=sys.stdin.readline().rstrip()
+curr_index=0
+p_cnt=[]
+while curr_index<m:
+    if p_list[curr_index]=="I":
+        cnt=0
+        while curr_index+2<m and p_list[curr_index+1:curr_index+3]=="OI":
+            curr_index+=2
+            cnt+=1
+        p_cnt.append(cnt)
+    curr_index+=1
 res=0
-s=sys.stdin.readline().rstrip()
-for i in range(m-2*n-1):
-    if s[i:i+2*n+1]==p_n:
-        res+=1
+for i in p_cnt:
+    if i>=n:
+        res+=(i-n+1)
 print(res)

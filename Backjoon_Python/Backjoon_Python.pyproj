@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>BinarySearch\10816(Number Card2).py</StartupFile>
+    <StartupFile>String\5525(IOIOI).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -67,6 +67,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\11062%28Card Game%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\1149%28RGB Distance%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\11660%28Find The Sum Of Intervals 5%29.py">
