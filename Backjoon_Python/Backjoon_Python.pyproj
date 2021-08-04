@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DivideAndConquer\1629(Multiplication).py</StartupFile>
+    <StartupFile>Math\12728(Calculate N-Squared).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -243,6 +243,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\1072%28Game%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Math\12728%28Calculate N-Squared%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\13251%28Take Out Cobblestone%29.py">

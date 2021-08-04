@@ -74,9 +74,3 @@
 #filemenu.add_separator()
 #filemenu.add_command(label="종료",command=func_exit)
 #window.mainloop()
-
-
-
-a=2**33
-print(a)
-print(bin(a))
