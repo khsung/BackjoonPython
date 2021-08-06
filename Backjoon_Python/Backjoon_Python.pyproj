@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DynamicProgramming\14501(Leave).py</StartupFile>
+    <StartupFile>Graph\17070(Move Pipe 1).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -154,6 +154,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\1697%28Hide And Seek%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graph\17070%28Move Pipe 1%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\2252%28Line Up%29.py">
