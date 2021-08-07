@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>BruteForce\1107(Remote Controll).py</StartupFile>
+    <StartupFile>DynamicProgramming\2096(Go Down).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -103,6 +103,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\1915%28Largest Square%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\2096%28Go Down%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\2579%28Climbing Stairs%29.py">
