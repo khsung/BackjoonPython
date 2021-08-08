@@ -2,33 +2,34 @@
 import sys
 n,m,b=map(int,input().split())
 graph=[]
-left=0
-right=0
-res_time=100000000000
-res_height=0
+top_len=0
+res_time=25000*600
+res=0
 for i in range(n):
     temp=list(map(int,sys.stdin.readline().split()))
-    temp_max=max(temp)
-    if temp_max>right:
-        right=temp_max
+    if top_len<max(temp):
+        top_len=max(temp)
     graph.append(temp)
 
-while left<=right:
-    minus=0
-    plus=0
-    mid=(left+right)//2
+while top_len>=0:
+    temp_time=0
+    temp_b=b
     for i in range(n):
         for j in range(m):
-            if graph[i][j]<mid:
-                plus+=(mid-graph[i][j])
+            temp=top_len-graph[i][j]
+            if temp>=0:
+                temp_time+=temp
+                temp_b-=temp
             else:
-                minus+=(graph[i][j]-mid)*2
-    if plus<=minus//2+b:
-        if res_time>=plus+minus:
-            res_time=plus+minus
-            if res_height<=mid:
-                res_height=mid
-        left=mid+1
+                temp_time+=(-2*temp)
+                temp_b-=temp
+    if temp_b<0:
+        top_len-=1
     else:
-        right=mid-1
-print(res_time,res_height)
+        if res_time>temp_time:
+            res_time=temp_time
+            res=top_len
+            top_len-=1
+        else:
+            break
+print(res_time,res)
