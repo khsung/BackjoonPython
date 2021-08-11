@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Backtracking\15657(N and M(8)).py</StartupFile>
+    <StartupFile>Math\2407(Combination).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -273,6 +273,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\1837%28Cryptography%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Math\2407%28Combination%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\2484%28Four Dice%29.py">
