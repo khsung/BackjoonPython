@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>BruteForce\17626(Four Squares).py</StartupFile>
+    <StartupFile>Graph\1916(Find The Minimum Cost).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -172,6 +172,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\17070%28Move Pipe 1%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graph\1916%28Find The Minimum Cost%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\1987%28Alphabet%29.py">
