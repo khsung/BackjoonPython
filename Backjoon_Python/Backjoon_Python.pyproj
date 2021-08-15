@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\1987(Alphabet).py</StartupFile>
+    <StartupFile>BruteForce\17626(Four Squares).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -43,6 +43,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BruteForce\1107%28Remote Controll%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BruteForce\17626%28Four Squares%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\14501%28Leave%29.py">
