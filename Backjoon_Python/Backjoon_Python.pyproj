@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Implement\20055(Robot On Conveyor Belt).py</StartupFile>
+    <StartupFile>Programmers\Failure Rate.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -314,6 +314,9 @@
     <Compile Include="NumberTheory\6064%28Kaying Calendar%29.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Programmers\Failure Rate.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Sort\18870%28Coordinate Pressure%29.py">
       <SubType>Code</SubType>
     </Compile>
@@ -619,6 +622,7 @@
     <Folder Include="Implement\" />
     <Folder Include="Hash\" />
     <Folder Include="BitMask\" />
+    <Folder Include="Programmers\" />
     <Folder Include="Tree\" />
     <Folder Include="TwoPointer\" />
     <Folder Include="NumberTheory\" />
