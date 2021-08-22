@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Programmers\Keypad Press.py</StartupFile>
+    <StartupFile>Programmers\Numeric Strings And English Words.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -318,6 +318,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Keypad Press.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programmers\Numeric Strings And English Words.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Sort\18870%28Coordinate Pressure%29.py">
