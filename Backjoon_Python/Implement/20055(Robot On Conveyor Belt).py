@@ -11,6 +11,8 @@ for i in temp_belt:
 while True:
     res+=1
     temp=belt.pop()
+    if temp[1]!=0:
+        temp[1]=0
     belt.appendleft(temp)
     belt[n-1][1]=0
     for i in range(n-2,-1,-1):
