@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Programmers\Sort File Names.py</StartupFile>
+    <StartupFile>Programmers\N Number Game.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -330,6 +330,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Keypad Press.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programmers\N Number Game.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\New ID Recommendation.py">
