@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Programmers\N Number Game.py</StartupFile>
+    <StartupFile>Programmers\News Clustering.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -336,6 +336,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\New ID Recommendation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programmers\News Clustering.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Numeric Strings And English Words.py">
