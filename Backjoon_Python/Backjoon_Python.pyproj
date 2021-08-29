@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Programmers\Parenthesis Conversion.py</StartupFile>
+    <StartupFile>Programmers\Rotate Matrix Borders.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -348,6 +348,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Parenthesis Conversion.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programmers\Rotate Matrix Borders.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Sort File Names.py">
