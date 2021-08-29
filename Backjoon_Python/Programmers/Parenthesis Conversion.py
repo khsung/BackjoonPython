@@ -30,10 +30,12 @@ def return_res(p):
     if len(u)>0 and check_match(u):
         res=u+return_res(v)
         return res
+    elif len(u)==0:
+        return u
     else:
-        temp=""
+        temp="("+return_res(v)
+        temp=temp+u[::-1][1:-1]+")"
         return temp
-
 
 def solution(p):
     answer = ''
@@ -44,6 +46,6 @@ def solution(p):
 
     return answer
 
-p=["(()())()",")(","()))((()"]
+p=[")))(((",")(","()))((()","(()())()"]
 for i in range(len(p)):
     print(solution(p[i]))
