@@ -15,11 +15,29 @@ def solution(info, query):
         query[i].append(0)
         query[i][3],query[i][4]=query[i][3].split()
         temp_cnt=0
-        #if query[i][0]=="-":
-
-        #else:
-
-
+        if query[i][0]=="-":
+            lang_cnt=[0,1,2]
+        else:
+            lang_cnt=[lang[query[i][0]]]
+        if query[i][1]=="-":
+            job_cnt=[0,1]
+        else:
+            job_cnt=[job[query[i][1]]]
+        if query[i][2]=="-":
+            carr_cnt=[0,1]
+        else:
+            carr_cnt=[carr[query[i][2]]]
+        if query[i][3]=="-":
+            food_cnt=[0,1]
+        else:
+            food_cnt=[food[query[i][3]]]
+        for a in lang_cnt:
+            for b in job_cnt:
+                for c in carr_cnt:
+                    for d in food_cnt:
+                        for e in test_info[a][b][c][d]:
+                            if e>=int(query[i][4]):
+                                temp_cnt+=1
 
         answer.append(temp_cnt)
 
