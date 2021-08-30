@@ -15,9 +15,9 @@ def solution(info, query):
         query[i].append(0)
         query[i][3],query[i][4]=query[i][3].split()
         temp_cnt=0
-        if query[i][0]=="-":
+        #if query[i][0]=="-":
 
-        else:
+        #else:
 
 
 
