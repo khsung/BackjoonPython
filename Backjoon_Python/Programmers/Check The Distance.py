@@ -23,26 +23,13 @@ def solution(places):
                             check=0
                             break
                     else:
-                        if mem_location[j][1]<mem_location[k][1]:
-
-
+                        if places[i][mem_location[j][0]][mem_location[k][1]]=="O" or places[i][mem_location[k][0]][mem_location[j][1]]=="O":
+                            check=0
+                            break
+      
         answer.append(check)
     return answer
 
 places=[["POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"], ["POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP"], ["PXOPX", "OXOXP", "OXPOX", "OXXOP", "PXPOX"], ["OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"], ["PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"]]
 
 print(solution(places))
-
-
-0 1   0,0  0,1
-1 0   1,0  1,1
-
-1 0   0,0  0,1
-0 1   1,0  1,1
-
-
-01
-10
-
-00
-11
