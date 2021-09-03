@@ -49,7 +49,7 @@ def solution(n, k, cmd):
 #k=[2,2]
 #cmd=[["D 2","C","U 3","C","D 4","C","U 2","Z","Z"],["D 2","C","U 3","C","D 4","C","U 2","Z","Z","U 1","C"]]
 n=[8]
-k=[0]
+k=[0] 
 cmd=[["C","C","C","C","C","C","C","C"]]
 for i in range(len(n)):
     print(solution(n[i], k[i], cmd[i]))
