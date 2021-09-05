@@ -7,13 +7,13 @@ def solution(board):
     dir=[[-1,0],[0,1],[1,0],[0,-1]]
     queue=deque()
     if board[0][1]==0:
-        queue.append([[[0,0],[0,1]],100])
+        queue.append([[[0,0],[0,1]],100,0])
         board_cost[0][1]=100
     if board[1][0]==0:
-        queue.append([[[0,0],[1,0]],100])
+        queue.append([[[0,0],[1,0]],100,0])
         board_cost[1][0]=100
     while len(queue)>0:
-        path,cost=queue.popleft()
+        path,cost,cnt=queue.popleft()
         for i in dir:
             x=path[len(path)-1][0]+i[0]
             y=path[len(path)-1][1]+i[1]
@@ -28,7 +28,12 @@ def solution(board):
                             board_cost[x][y]=cost+100
                             temp_path=copy.deepcopy(path)
                             temp_path.append([x,y])
-                            queue.append([temp_path,cost+100])
+                            queue.append([temp_path,cost+100,cnt])
+                        elif answer>cost+100 and cnt<1:
+                            board_cost[x][y]=cost+100
+                            temp_path=copy.deepcopy(path)
+                            temp_path.append([x,y])
+                            queue.append([temp_path,cost+100,cnt+1])
                 else:
                     if x==len(board)-1 and y==len(board[0])-1:
                         if answer>cost+600:
@@ -38,9 +43,15 @@ def solution(board):
                             board_cost[x][y]=cost+600
                             temp_path=copy.deepcopy(path)
                             temp_path.append([x,y])
-                            queue.append([temp_path,cost+600])
-    return answer
+                            queue.append([temp_path,cost+600,cnt])
+                        elif answer>cost+100 and cnt<1:
+                            board_cost[x][y]=cost+600
+                            temp_path=copy.deepcopy(path)
+                            temp_path.append([x,y])
+                            queue.append([temp_path,cost+600,cnt+1])
 
-board=[[[0,0,0],[0,0,0],[0,0,0]],[[0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0],[0,0,0,0,0,1,0,0],[0,0,0,0,1,0,0,0],[0,0,0,1,0,0,0,1],[0,0,1,0,0,0,1,0],[0,1,0,0,0,1,0,0],[1,0,0,0,0,0,0,0]],[[0,0,1,0],[0,0,0,0],[0,1,0,1],[1,0,0,0]],[[0,0,0,0,0,0],[0,1,1,1,1,0],[0,0,1,0,0,0],[1,0,0,1,0,1],[0,1,0,0,0,1],[0,0,0,0,0,0]]]
+    return answer
+board=[[[0, 0, 0, 0, 0],[0, 1, 1, 1, 0],[0, 0, 1, 0, 0],[1, 0, 0, 0, 1],[0, 1, 1, 0, 0]]]
+#board=[[[0,0,0],[0,0,0],[0,0,0]],[[0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0],[0,0,0,0,0,1,0,0],[0,0,0,0,1,0,0,0],[0,0,0,1,0,0,0,1],[0,0,1,0,0,0,1,0],[0,1,0,0,0,1,0,0],[1,0,0,0,0,0,0,0]],[[0,0,1,0],[0,0,0,0],[0,1,0,1],[1,0,0,0]],[[0,0,0,0,0,0],[0,1,1,1,1,0],[0,0,1,0,0,0],[1,0,0,1,0,1],[0,1,0,0,0,1],[0,0,0,0,0,0]]]
 for i in range(len(board)):
     print(solution(board[i]))
