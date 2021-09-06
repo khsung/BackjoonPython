@@ -1,25 +1,31 @@
 #파일명 정렬
 def solution(files):
     answer = []
-    file_list=[[]for i in range(len(files))]
+    tempanswer=[]
     for i in range(len(files)):
-        head=""
-        while files[i][0].isalpha() or files[i][0]=="-" or files[i][0]==" ":
-            head+=files[i][0]
-            files[i]=files[i][1:]
-        file_list[i].append(head)
-        number=""
-        for j in range(5):
-            if files[i][0].isdigit():
-                number+=files[i][0]
-                files[i]=files[i][1:]
-            else:
+        tempanswer.append([[],[],[]])
+        for j in range(len(files[i])):
+            if files[i][j].isdigit():
+                tempanswer[i][0].append(files[i][:j])
+                tempanswer[i][0].append(files[i][:j].lower())
+                check=True
+                for k in range(5):
+                    if j+k>=len(files[i]):
+                        break
+                    elif not files[i][j+k].isdigit():
+                        tempanswer[i][1].append(files[i][j:j+k])
+                        tempanswer[i][1].append(int(files[i][j:j+k]))
+                        tempanswer[i][2].append(files[i][j+k:])
+                        check=False
+                        break
+                if check:
+                    tempanswer[i][1].append(files[i][j:])
+                    tempanswer[i][1].append(int(files[i][j:]))
                 break
-        file_list[i].append(number)
-        file_list[i].append(files[i])
-    file_list.sort(key=lambda x:(x[0].upper(),int(x[1])))
-    for i in range(len(file_list)):
-        temp=str(file_list[i][0])+str(file_list[i][1])+str(file_list[i][2])
+    tempanswer.sort(key=lambda x:(x[0][1],-x[1][1],x[2][0]))
+    tempanswer.reverse()
+    for i in range(len(tempanswer)):
+        temp=(tempanswer[i][0][0]+tempanswer[i][1][0]+tempanswer[i][2][0])
         answer.append(temp)
     return answer
 
