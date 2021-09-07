@@ -19,18 +19,21 @@ def solution(files):
                         check=False
                         break
                 if check:
-                    tempanswer[i][1].append(files[i][j:])
-                    tempanswer[i][1].append(int(files[i][j:]))
+                    tempanswer[i][1].append(files[i][j:j+5])
+                    tempanswer[i][1].append(int(files[i][j:j+5]))
+                    if files[i][j+5:]=="":
+                        tempanswer[i][2].append("")
+                    else:
+                        tempanswer[i][2].append(files[i][j+5:])
                 break
-    tempanswer.sort(key=lambda x:(x[0][1],-x[1][1],x[2][0]))
-    tempanswer.reverse()
+    
+    tempanswer.sort(key=lambda x:(x[0][1],x[1][1]))
     for i in range(len(tempanswer)):
         temp=(tempanswer[i][0][0]+tempanswer[i][1][0]+tempanswer[i][2][0])
         answer.append(temp)
     return answer
 
-files=[["img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"],
-        ["F-5 Freedom Fighter", "B-50 Superfortress", "A-10 Thunderbolt II", "F-14 Tomcat"]]
-
+#files=[["img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"],["F-5 Freedom Fighter", "B-50 Superfortress", "A-10 Thunderbolt II", "F-14 Tomcat"]]
+files=[["img000012345", "img1.png","img2","IMG02"]]
 for i in range(len(files)):
     print(solution(files[i]))
