@@ -1,51 +1,48 @@
 #괄호 변환
-def divide_str(s):
-    u=v=""
-    left_str=right_str=0
-    for i in range(len(s)):
-        if s[i]=="(":
-            left_str+=1
-        else:
-            right_str+=1
-        if left_str==right_str:
-            u=s[:i+1]
-            v=s[i+1:]
-            break
-    return u,v
-
-def check_match(u):
-    stack=[]
-    for i in u:
+def correct(s):
+    queue=[]
+    for i in s:
         if i=="(":
-            stack.append("(")
+            queue.append(i)
         else:
-            if len(stack)>0 and stack.pop()=="(":
-                pass
-            else:
+            if len(queue)==0:
                 return False
-    return True
-
-def return_res(p):
-    u,v=divide_str(p)
-    if len(u)>0 and check_match(u):
-        res=u+return_res(v)
-        return res
-    elif len(u)==0:
-        return u
+            else:
+                queue.pop()
+    if len(queue)==0:
+        return True
     else:
-        temp="("+return_res(v)
-        temp=temp+u[::-1][1:-1]+")"
-        return temp
+        return False
 
-def solution(p):
-    answer = ''
-    if check_match(p):
+def first(p):
+    if len(p)==0:
         return p
     else:
-        answer=return_res(p)
+        left=0
+        right=0
+        for i in range(len(p)):
+            if p[i]=="(":
+                left+=1
+            elif p[i]==")":
+                right+=1
+            if left==right:
+                u=p[:i+1]
+                v=p[i+1:]
+                break
+        if correct(u):
+            return u+first(v)
+        else:
+            temp="("+first(v)+")"
+            for i in range(1,len(u)-1):
+                if u[i]=="(":
+                    temp+=")"
+                else:
+                    temp+="("
+            return temp
 
-    return answer
+def solution(p):
+    return first(p)
 
-p=[")))(((",")(","()))((()","(()())()"]
+p=["(()())()",")(","()))((()","))()(("]
 for i in range(len(p)):
     print(solution(p[i]))
