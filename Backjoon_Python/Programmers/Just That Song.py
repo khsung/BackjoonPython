@@ -1,41 +1,25 @@
 #방금 그곡
 def solution(m, musicinfos):
     answer = ''
-    while "#" in m:
-        m=m.replace("C#","c")
-        m=m.replace("D#","d")
-        m=m.replace("F#","f")
-        m=m.replace("G#","g")
-        m=m.replace("A#","a")
+    play_time=0
     for i in range(len(musicinfos)):
-        minute=0
-        musicinfos[i]=list(musicinfos[i].split(","))
-        musicinfos[i][0]=list(map(int,musicinfos[i][0].split(":")))
-        musicinfos[i][1]=list(map(int,musicinfos[i][1].split(":")))
-
-        while "#" in musicinfos[i][3]:
-            musicinfos[i][3]=musicinfos[i][3].replace("C#","c")
-            musicinfos[i][3]=musicinfos[i][3].replace("D#","d")
-            musicinfos[i][3]=musicinfos[i][3].replace("F#","f")
-            musicinfos[i][3]=musicinfos[i][3].replace("G#","g")
-            musicinfos[i][3]=musicinfos[i][3].replace("A#","a")
-
-        if musicinfos[i][0][1]<=musicinfos[i][1][1]:
-            minute=musicinfos[i][1][1]-musicinfos[i][0][1]
-        else:
-            musicinfos[i][0][0]+=1
-            minute=60-(musicinfos[i][0][1]-musicinfos[i][1][1])
-        minute+=((musicinfos[i][1][0]-musicinfos[i][0][0])*60)
+        temp=musicinfos[i].split(",")
+        start=list(map(int,temp[0].split(":")))
+        end=list(map(int,temp[1].split(":")))
+        total=(end[0]-start[0])*60+(end[1]-start[1])
         
-        if minute<=len(musicinfos[i][3]):
-            musicinfos[i][3]=musicinfos[i][3][:minute]
-        else:
-            tempa=minute//len(musicinfos[i][3])
-            tempb=minute%len(musicinfos[i][3])
-            musicinfos[i][3]=musicinfos[i][3]*tempa+musicinfos[i][3][:tempb]
-        if m in musicinfos[i][3]:
-            answer=musicinfos[i][2]
-            break
+        while "#" in temp[3]:
+            temp[3]=temp[3].replace(temp[3][temp[3].find("#")-1]+"#",chr(ord(temp[3][temp[3].find("#")-1])+32))
+            
+        while "#" in m:
+            m=m.replace(m[m.find("#")-1]+"#",chr(ord(m[m.find("#")-1])+32))
+
+        temp[3]=temp[3]*(total//len(temp[3]))+temp[3][:total%len(temp[3])]
+        if m in temp[3]:
+            if play_time<total:
+                play_time=total
+                answer=temp[2]
+
     if answer=="":
         answer="(None)"
     return answer
