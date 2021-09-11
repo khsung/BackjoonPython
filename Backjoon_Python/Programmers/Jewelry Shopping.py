@@ -1,71 +1,50 @@
 #보석 쇼핑
 def solution(gems):
-    gem=[0 for i in range(26)]
-    curr_gem=[0 for i in range(26)]
-    distance=len(gems)
-    cnt=0
-    curr_cnt=0
+    answer = [1,len(gems)]
+    answer_len=len(gems)
+    curr_gems=[0 for i in range(26)]
+    alpha=[0 for i in range(26)]
+    for i in gems:
+        for j in i:
+            if alpha[ord(j)-ord("A")]==0:
+                alpha[ord(j)-ord("A")]=1
+
     left=0
     right=0
-    left_res=1
-    right_res=len(gems)
-    #True일때 right증가, False일때 left증가
-    check=True
-    #print(ord("A")-65)
-    #print(ord("Z")-65)
+    add=True
+    while right<len(gems) and left<=right:
+        #print(curr_gems,add)
+        #print(alpha,left,right)
+        if add:
+            for i in gems[right]:
+               curr_gems[ord(i)-ord("A")]+=1
+               alpha[ord(i)-ord("A")]=0
+            if alpha.count(1)==0:
+                if right-left+1<answer_len:
+                    answer_len=right-left+1
+                    answer=[left+1,right+1]
+                add=False
+            else:
+                right+=1
 
-    for i in range(len(gems)):
-        for j in range(len(gems[i])):
-            if gem[ord(gems[i][j])-65]==0:
-                gem[ord(gems[i][j])-65]=1
-                cnt+=1
-    print(curr_gem,curr_cnt,cnt,left_res,right_res)
-    while right<len(gems):
-        #print(left,right,distance)
-        #print(curr_gem,curr_cnt,cnt,left_res,right_res)
-        if check:
-            for i in range(len(gems[right])):
-                curr_gem[ord(gems[right][i])-65]+=1
-                if curr_gem[ord(gems[right][i])-65]==1:
-                    curr_cnt+=1
-            if curr_cnt==cnt:
-                if distance>right-left+1:
-                    distance=right-left+1
-                    left_res=left+1
-                    right_res=right+1
-                if left<right:
-                    left+=1
-                    check=False
-                else:
-                    right+=1
-                    check=True
-            else:
-                right+=1
         else:
-            print(left)
-            for i in range(len(gems[left])):
-                curr_gem[ord(gems[left][i])-65]-=1
-                if curr_gem[ord(gems[left][i])-65]==0:
-                    curr_cnt-=1
-            if curr_cnt==cnt:
-                if distance>right-left+1:
-                    distance=right-left+1
-                    left_res=left+1
-                    right_res=right+1
-                if left<right:
-                    left+=1
-                else:
-                    right+=1
-                    check=True
+            for i in gems[left]:
+                curr_gems[ord(i)-ord("A")]-=1
+                if curr_gems[ord(i)-ord("A")]==0:
+                    alpha[ord(i)-ord("A")]=1
+            #left+=1
+            if alpha.count(1)==0:
+                if right-left+1<answer_len:
+                    answer_len=right-left+1
+                    answer=[left+1,right+1]
+                left+=1
             else:
                 right+=1
-                check=True
-        print(curr_gem,curr_cnt,cnt,left_res,right_res)
-    answer=[left_res,right_res]
+                add=True
     return answer
 
 gems=[["DIA", "RUBY", "RUBY", "DIA", "DIA", "EMERALD", "SAPPHIRE", "DIA"],["AA", "AB", "AC", "AA", "AC"],["XYZ", "XYZ", "XYZ"],["ZZZ", "YYY", "NNNN", "YYY", "BBB"]]
-
+#gems=[["ZZZ", "YYY", "NNNN", "YYY", "BBB"]]
 for i in range(len(gems)):
     print(solution(gems[i]))
 
