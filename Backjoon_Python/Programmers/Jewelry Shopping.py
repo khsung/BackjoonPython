@@ -13,8 +13,8 @@ def solution(gems):
     right=0
     add=True
     while right<len(gems) and left<=right:
-        #print(curr_gems,add)
-        #print(alpha,left,right)
+        print(curr_gems,add)
+        print(alpha,left,right)
         if add:
             for i in gems[right]:
                curr_gems[ord(i)-ord("A")]+=1
@@ -32,7 +32,7 @@ def solution(gems):
                 curr_gems[ord(i)-ord("A")]-=1
                 if curr_gems[ord(i)-ord("A")]==0:
                     alpha[ord(i)-ord("A")]=1
-            #left+=1
+            left+=1
             if alpha.count(1)==0:
                 if right-left+1<answer_len:
                     answer_len=right-left+1
