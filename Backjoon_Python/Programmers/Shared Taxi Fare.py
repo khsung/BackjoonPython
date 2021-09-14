@@ -1,18 +1,48 @@
 #합승 택시 요금
 def solution(n, s, a, b, fares):
-    answer = 0
     INF=float('inf')
-    cost=[INF for i in range(n)]
-
+    answer = INF
+    
         #도착지점, cost
     path=[[]for i in range(n)]
     for i in range(len(fares)):
         path[fares[i][0]-1].append([fares[i][1]-1,fares[i][2]])
         path[fares[i][1]-1].append([fares[i][0]-1,fares[i][2]])
     
+    cost_to_mid=[INF for i in range(n)]
+    cost_to_mid[s-1]=0
+    start=s-1
+    visited=[0 for i in range(n)]
+    for j in range(n):
+            visited[start]=1
+            for k in range(len(path[start])):
+                if cost_to_mid[path[start][k][0]]>cost_to_mid[start]+path[start][k][1]:
+                    cost_to_mid[path[start][k][0]]=cost_to_mid[start]+path[start][k][1]
+            temp=INF
+            for k in range(n):
+                if visited[k]==0 and temp>cost_to_mid[k]:
+                    temp=cost_to_mid[k]
+                    start=k
+
     for i in range(n):
         mid=i
+        cost_to_end=[INF for i in range(n)]
+        cost_to_end[mid]=0
+        start=mid
+        visited=[0 for i in range(n)]
+        for j in range(n):
+            visited[start]=1
+            for k in range(len(path[start])):
+                if cost_to_end[path[start][k][0]]>cost_to_end[start]+path[start][k][1]:
+                    cost_to_end[path[start][k][0]]=cost_to_end[start]+path[start][k][1]
+            temp=INF
+            for k in range(n):
+                if visited[k]==0 and temp>cost_to_end[k]:
+                    temp=cost_to_end[k]
+                    start=k
 
+        if answer>cost_to_mid[mid]+cost_to_end[a-1]+cost_to_end[b-1]:
+            answer=cost_to_mid[mid]+cost_to_end[a-1]+cost_to_end[b-1]
 
     return answer
 
