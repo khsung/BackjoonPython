@@ -1,7 +1,14 @@
 #입실 퇴실
 def solution(enter, leave):
-    answer = []
-    visited=[0 for i in range(len(enter))]
+    answer = [0 for i in range(len(enter))]
+
+    for i in range(len(enter)):
+        visited=[0 for a in range(len(enter))]
+        for j in range(i+1,len(enter)):
+            visited[enter[j]-1]=1
+        for j in range(len(leave)):
+
+
     return answer
 
 enter=[[1,3,2],[1,4,2,3],[3,2,1],[3,2,1],[1,4,2,3]]
