@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Programmers\Sorting Boxers.py</StartupFile>
+    <StartupFile>Programmers\Check-In And Check-Out.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -327,6 +327,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Check The Distance.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programmers\Check-In And Check-Out.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Compression.py">
