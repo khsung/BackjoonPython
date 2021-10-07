@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Programmers\Check-In And Check-Out.py</StartupFile>
+    <StartupFile>Programmers\Plain Square.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -384,6 +384,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Parenthesis Conversion.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programmers\Plain Square.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Race Track Construction.py">
