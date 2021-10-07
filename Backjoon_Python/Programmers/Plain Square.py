@@ -6,16 +6,13 @@ def find_factor(w,h):
     else:
         return find_factor(h%w,w)
 
-
 def solution(w,h):
     answer = 1
     if w>h:
         w,h=h,w
     temp=find_factor(w,h)
-    tempw=w//temp
-    temph=h//temp
-    return w*h-(math.ceil(temph/tempw))*tempw*temp
+    return w*h-(w+h-temp)
 
-w=8
-h=12
+w=10
+h=2
 print(solution(w,h))
