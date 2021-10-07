@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Programmers\Remove By Pair.py</StartupFile>
+    <StartupFile>Programmers\Shortest Distance On The Game Map.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -405,6 +405,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Shared Taxi Fare.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programmers\Shortest Distance On The Game Map.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Shuttle Bus.py">
