@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Programmers\Shortest Distance On The Game Map.py</StartupFile>
+    <StartupFile>Programmers\Split The Power Grid In Two.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -417,6 +417,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Sorting Boxers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programmers\Split The Power Grid In Two.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\String Compression.py">
