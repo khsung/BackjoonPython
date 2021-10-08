@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Programmers\Split The Power Grid In Two.py</StartupFile>
+    <StartupFile>Programmers\Skill Tree.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -411,6 +411,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Shuttle Bus.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programmers\Skill Tree.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Sort File Names.py">
