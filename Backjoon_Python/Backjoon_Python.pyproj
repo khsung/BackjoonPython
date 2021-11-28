@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Programmers\Muji's Mukbang Live.py</StartupFile>
+    <StartupFile>Contest\2021 Sogang Programming Contest_A번_Ресторан.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -46,6 +46,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BruteForce\17626%28Four Squares%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contest\2021 Sogang Programming Contest_A번_Ресторан.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\14501%28Leave%29.py">
