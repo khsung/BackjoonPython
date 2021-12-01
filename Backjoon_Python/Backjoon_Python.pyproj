@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Contest\2021 Sogang Programming Contest_I번_문자열 압축 해제.py</StartupFile>
+    <StartupFile>For Blogs\Binary Search.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -139,6 +139,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\9465%28Sticker%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="For Blogs\Binary Search.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Function\10699%28Today%29.py">
@@ -766,6 +769,7 @@
     <Folder Include="Implement\" />
     <Folder Include="Hash\" />
     <Folder Include="BitMask\" />
+    <Folder Include="For Blogs\" />
     <Folder Include="Programmers\" />
     <Folder Include="Tree\" />
     <Folder Include="TwoPointer\" />
