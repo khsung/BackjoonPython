@@ -5,8 +5,12 @@ def binary(n):
     index=-1
     left=0
     right=len(data)-1
+    
+    print("이진 탐색 과정 :",end=" ")
+
     while left<=right:
         mid=(left+right)//2
+        print(data[mid],end=" ")
         if data[mid]==n:
             index=mid
             break
@@ -14,6 +18,7 @@ def binary(n):
             right=mid-1
         else:
             left=mid+1
+    print()
     return index
 
 first=binary(2)
