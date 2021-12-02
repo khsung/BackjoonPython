@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\23741(Yabawi game).py</StartupFile>
+    <StartupFile>GreedyAlgorithm\23742(Player-based Team Distribution).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -211,6 +211,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\23741%28Yabawi game%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GreedyAlgorithm\23742%28Player-based Team Distribution%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Greedy\10162%28Microwave%29.py">
