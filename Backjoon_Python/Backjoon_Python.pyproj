@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>For Blogs\Stack And Queue.py</StartupFile>
+    <StartupFile>Blogs\Stack And Queue.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -141,10 +141,10 @@
     <Compile Include="DynamicProgramming\9465%28Sticker%29.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="For Blogs\Binary Search.py">
+    <Compile Include="Blogs\Binary Search.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="For Blogs\Stack And Queue.py">
+    <Compile Include="Blogs\Stack And Queue.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Function\10699%28Today%29.py">
@@ -778,7 +778,7 @@
     <Folder Include="Implement\" />
     <Folder Include="Hash\" />
     <Folder Include="BitMask\" />
-    <Folder Include="For Blogs\" />
+    <Folder Include="Blogs\" />
     <Folder Include="Programmers\" />
     <Folder Include="Tree\" />
     <Folder Include="TwoPointer\" />
