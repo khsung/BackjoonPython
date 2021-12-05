@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Blogs\Stack And Queue.py</StartupFile>
+    <StartupFile>Programmers\Function Development.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -372,6 +372,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Friends 4 Block.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programmers\Function Development.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Jewelry Shopping.py">
