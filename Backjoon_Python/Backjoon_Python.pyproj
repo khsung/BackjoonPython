@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>GreedyAlgorithm\23742(Player-based Team Distribution).py</StartupFile>
+    <StartupFile>For Blogs\Stack And Queue.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -142,6 +142,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="For Blogs\Binary Search.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="For Blogs\Stack And Queue.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Function\10699%28Today%29.py">
