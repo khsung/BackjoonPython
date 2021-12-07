@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Backtracking\Decreasing Number.py</StartupFile>
+    <StartupFile>Heap\1655(Tell Me In The Middle).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -279,6 +279,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BitMask\11723%28Set%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Heap\1655%28Tell Me In The Middle%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Implement\14500%28Tetromino%29.py">
