@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Blogs\Tree Traversal.py</StartupFile>
+    <StartupFile>Blogs\Binary Search Tree.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -43,6 +43,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BinarySearch\2805%28Cutting Trees%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Blogs\Binary Search Tree.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Blogs\Heap.py">
