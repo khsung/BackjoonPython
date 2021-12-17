@@ -11,22 +11,19 @@ while True:
         break
 
 def postorder(left,right):
-    mid=left
-    if left+1<right:
-        for i in range(left,right):
-            print(num_list[left:right])
+    if left>right:
+        return
+    else:
+        mid=right+1
+        for i in range(left+1,right+1):
             if num_list[left]<num_list[i]:
                 mid=i
-                postorder(left+1,mid)
                 break
-            elif i==right-1:
-                mid=right
-                postorder(left+1,mid)
+        postorder(left+1,mid-1)
         postorder(mid,right)
-    print("left =",left)
-    print(num_list[left])
+        print(num_list[left])
 
-postorder(0,len(num_list))
+postorder(0,len(num_list)-1)
 
 
 
