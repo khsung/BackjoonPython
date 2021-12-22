@@ -128,8 +128,7 @@ def dic_delete(curr,num):
 class Node:
     def __init__(self,num):
         self.data=num
-        self.left=None
-        self.right=None
+        self.left=self.right=None
 
 class Binary_tree:
     def __init__(self):
@@ -155,83 +154,107 @@ class Binary_tree:
                         self.curr=self.curr.right
 
     def Node_delete(self,num):
-        if self.root==None:
+        self.curr=self.root
+        if self.curr == None:
             print("빈 트리")
-        else:
-            self.curr=self.root
-            parent=self.root
-            del_check=True
-            dir_left=True
-            while self.curr.data!=num:
-                parent=self.curr
-                if num<self.curr.data:
-                    if self.curr.left==None:
-                        print("삭제할 노드가 없습니다.")
-                        del_check=False
-                        break
-                    else:
-                        self.curr=self.curr.left
-                        dir_left=True
-                else:
-                    if self.curr.right==None:
-                        print("삭제할 노드가 없습니다.")
-                        del_check=False
-                        break
-                    else:
-                        self.curr=self.curr.right
-                        dir_left=False
 
-            if del_check:
-                if dir_left:
-                    while self.curr.right!=None:
-                        self.curr=self.curr.right
+        #현재 노드의 데이터보다 삭제할 데이터가 클 경우
+        elif self.curr.data < num:
+            #오른쪽 자식이 없을 경우 오류출력
+            if self.right == None:
+                print(data,"에 해당하는 원소 없음\n")
+
+            #현재 노드를 부모노드로 저장하고
+            #오른쪽 자식으로 이동
+            else:
+                parent = self.curr
+                self.curr = self.curr.right
+                self.Node_delete(num)
+
+        #현재 노드의 데이터보다 삭제할 데이터가 작을 경우
+        elif self.curr.data > num:
+            #왼쪽 자식이 없을 경우 오류출력
+            if self.curr.left == None:
+                print(data,"에 해당하는 원소 없음\n")
+            
+            else:
+                parent = self.curr
+                self.curr = self.curr.left
+                self.Node_delete(num)
+
+        #현재 노드가 지워야 할 노드일 경우
+        else:
+            #자식노드가 없을 경우
+            if self.curr.left == None and self.curr.right == None:
+                if parent.right == self:
+                    parent.right = None
+
+                elif parent.left == self:
+                    parent.left = None
+
                 else:
-                    while self.curr.left!=None:
-                        self.curr=self.curr.left
-                if parent==self.curr:
-                    del self.curr
-                else:
-                    parent.data=self.curr.data
-                    del self.curr
+                    self.curr.data = None
+            elif self.curr.left == None:
+                temp = self.curr
+                parent = self.curr
+                self.curr = self.curr.right
+                
+                while self.curr.left != None:
+                    parent = self.curr
+                    self.curr = self.curr.left
+                temp.data,self.curr.data = self.curr.data,temp.data
+                parent.left = None
+                del(self.curr)
+            else:
+                temp = self
+                parent = self
+                self = self.left
+                while self.right != None:
+                    parent = self
+                    self = self.right
+                temp.data,self.data = self.data,temp.data
+                parent.right = None
+                del(self)
 
 
 
 
 #리스트로 구현
-binary_tree=['*' for i in range(16)]
-root=1
-list_insert(root,6)
-list_insert(root,3)
-list_insert(root,1)
-list_insert(root,9)
-list_insert(root,7)
-list_insert(root,4)
-list_insert(root,8)
+#print("리스트로 구현한 이진 탐색 트리\n")
+#binary_tree=['*' for i in range(16)]
+#root=1
+#list_insert(root,6)
+#list_insert(root,3)
 #print(binary_tree)
-list_delete(root,4)
+#list_insert(root,1)
+#list_insert(root,9)
 #print(binary_tree)
-list_delete(root,8)
+#list_insert(root,7)
+#list_insert(root,4)
+#list_insert(root,8)
 #print(binary_tree)
+
 
 
 #딕셔너리로 구현
+print("딕셔너리로 구현한 이진 탐색 트리\n")
 binary_tree={}
 root=None
 dic_insert(root,6)
 dic_insert(root,3)
+print(binary_tree)
 dic_insert(root,1)
 dic_insert(root,9)
+print(binary_tree)
 dic_insert(root,7)
 dic_insert(root,4)
 dic_insert(root,8)
 print(binary_tree)
-dic_delete(root,4)
-print(binary_tree)
-dic_delete(root,7)
-print(binary_tree)
+
 
 
 #구조체로 구현
+print("구조체로 구현한 이진 탐색 트리\n")
 Binary=Binary_tree()
 Binary.Node_insert(6)
 Binary.Node_insert(3)
@@ -240,7 +263,3 @@ Binary.Node_insert(9)
 Binary.Node_insert(7)
 Binary.Node_insert(4)
 Binary.Node_insert(8)
-print(Binary.root.left.data)
-Binary.Node_delete(3)
-print(Binary.root.left.data)
-#print(Binary.root.right.data)
