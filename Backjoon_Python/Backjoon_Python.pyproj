@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>StackAndQueue\1662(Compression).py</StartupFile>
+    <StartupFile>Math\1009(Distributed Processing).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -315,6 +315,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Implement\2167%28Sum of 2D Array%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Math\1009%28Distributed Processing%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\10539%28Soobin and Sequence%29.py">
