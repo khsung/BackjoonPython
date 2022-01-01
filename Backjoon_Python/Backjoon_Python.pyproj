@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Math\2436(Common Factor).py</StartupFile>
+    <StartupFile>Math\24040(Pretty Cake).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -339,6 +339,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\1837%28Cryptography%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Math\24040%28Pretty Cake%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Math\2407%28Combination%29.py">
