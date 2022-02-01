@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Graph\2583(Find The Realm).py</StartupFile>
+    <StartupFile>DynamicProgramming\12852(Make it 1 2).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -73,6 +73,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Contest\2021 Sogang Programming Contest_I번_문자열 압축 해제.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\12852%28Make it 1 2%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\14501%28Leave%29.py">
