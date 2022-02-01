@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DynamicProgramming\9251(LCS).py</StartupFile>
+    <StartupFile>Graph\2583(Find The Realm).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -220,6 +220,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\2252%28Line Up%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graph\2583%28Find The Realm%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Graph\3055%28Escape%29.py">
