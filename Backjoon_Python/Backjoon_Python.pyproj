@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Greedy\15903(Card Fusion Game).py</StartupFile>
+    <StartupFile>Greedy\1398(Coin Problem).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -266,6 +266,9 @@
     </Compile>
     <Compile Include="Greedy\13305%28Gas Station%29.py" />
     <Compile Include="Greedy\13904%28Assignment%29.py" />
+    <Compile Include="Greedy\1398%28Coin Problem%29.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Greedy\1439%28Flip%29.py" />
     <Compile Include="Greedy\1541%28Lost Parenthesis%29.py" />
     <Compile Include="Greedy\15903%28Card Fusion Game%29.py">
