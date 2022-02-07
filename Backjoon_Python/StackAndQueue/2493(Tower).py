@@ -1,10 +1,16 @@
-#2493 탑 시간초과 
-n=int(input())
-towers=list(map(int,input().split()))
+#2493 탑 
+import sys
+n = int(sys.stdin.readline())
+tower=list(map(int,sys.stdin.readline().split()))
 res=[0 for i in range(n)]
-for i in range(len(towers)-1,0,-1):
-    for j in range(i-1,0,-1):
-        if towers[j]>towers[i]:
-            res[i]=towers[j]
-            break
-print(res)
+queue=[n-1]
+for i in range(n-2,-1,-1):
+    if len(queue)>0 and tower[i]>tower[queue[len(queue)-1]]:
+        while len(queue)>0 and tower[i]>tower[queue[len(queue)-1]]:
+            res[queue.pop()]=i+1
+        queue.append(i)
+    else:
+        queue.append(i)
+
+for i in res:
+    print(i,end=" ")
