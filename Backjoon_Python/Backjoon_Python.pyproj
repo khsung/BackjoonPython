@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DynamicProgramming\11048(Go To).py</StartupFile>
+    <StartupFile>DynamicProgramming\15988(1, 2, 3 Plus 3).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -142,6 +142,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\1463%28Make It 1%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\15988%281, 2, 3 Plus 3%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\1915%28Largest Square%29.py">
