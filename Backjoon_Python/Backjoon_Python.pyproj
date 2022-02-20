@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DynamicProgramming\11401(Binomial Coefficient 3).py</StartupFile>
+    <StartupFile>DynamicProgramming\2293(Coin 1).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -145,6 +145,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\2096%28Go Down%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DynamicProgramming\2293%28Coin 1%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DynamicProgramming\2579%28Climbing Stairs%29.py">
