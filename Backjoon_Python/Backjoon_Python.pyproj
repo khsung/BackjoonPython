@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>05967938-cffa-4bff-96bf-58cf34671bc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DynamicProgramming\15988(1, 2, 3 Plus 3).py</StartupFile>
+    <StartupFile>Programmers\Farthest Node.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -435,6 +435,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Failure Rate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programmers\Farthest Node.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Programmers\Friends 4 Block.py">
